@@ -1,0 +1,20 @@
+// Type utilities
+// -------------------------
+
+.u-text {
+    &-left { text-align: left !important; }
+
+    &-right { text-align: right !important; }
+
+    &-center { text-align: center !important; }
+
+    &-justify { text-align: justify !important; }
+
+    &-nowrap { white-space: nowrap !important; }
+
+    &-lowercase { text-transform: lowercase !important; }
+
+    &-uppercase { text-transform: uppercase !important; }
+
+    &-capitalize { text-transform: capitalize !important; }
+}

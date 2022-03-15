@@ -1,3 +1,30 @@
 {
-  "extends": "next/core-web-vitals"
+  "parser": "babel-eslint",
+  "plugins": [
+    "react-hooks"
+  ],
+  "extends": [
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "react/prop-types": "off",
+    "react/jsx-curly-spacing": ["warn", {
+      "when": "always",
+      "spacing": {
+        "objectLiterals": "never"
+      }
+    }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  }
 }

@@ -1,0 +1,65 @@
+//
+// General
+// --------------------------------------------------
+
+html {
+    box-sizing: border-box;
+    background-color: #000;
+    scroll-behavior: smooth;
+
+    *, *::before, *::after {
+        box-sizing: inherit;
+    }
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-size: cover;
+
+    &.theme-bare {
+        background-color: #fff;
+    }
+}
+
+a {
+    transition: color 0.2s ease-out;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
+
+    &.link-unstyled {
+        transition: none;
+        color: inherit;
+
+        &:hover, &:focus {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}
+
+button {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+}
+
+strong {
+    font-weight: $font-weight-bold;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: rgba(#fff, 0.4);
+}

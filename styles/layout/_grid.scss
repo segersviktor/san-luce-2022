@@ -1,0 +1,97 @@
+$grid-gutter: 1rem * 8 !default;
+
+@mixin row-base {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    margin-right: $grid-gutter/-2;
+    margin-left: $grid-gutter/-2;
+}
+
+@mixin col-base {
+    position: relative;
+    padding-right: $grid-gutter/2;
+    padding-left: $grid-gutter/2;
+    max-width: 100%;
+    width: 100%;
+    min-height: 1px;
+    flex-grow: 1;
+
+    //@include len-respond-to('tiny') {
+    //    flex-basis: 0;
+    //}
+}
+
+@mixin row($breakpoint) {
+    .row--#{$breakpoint} {
+        &-top {
+            align-items: flex-start;
+        }
+
+        &-middle {
+            align-items: center;
+        }
+
+        &-bottom {
+            align-items: flex-end;
+        }
+
+        &-around {
+            justify-content: space-around;
+        }
+
+        &-between {
+            justify-content: space-between;
+        }
+    }
+}
+
+@mixin col($breakpoint) {
+    .col--#{$breakpoint} {
+        &-top {
+            align-self: flex-start;
+        }
+
+        &-middle {
+            align-self: center;
+        }
+
+        &-bottom {
+            align-self: flex-end;
+        }
+
+        &-first {
+            order: -1;
+        }
+
+        &-last {
+            order: 1;
+        }
+    }
+
+    @for $i from 0 through $len-grid-columns {
+        .col--#{$breakpoint}-#{$i} {
+            flex: 0 0 #{(100% / $len-grid-columns) * $i};
+            max-width: #{(100% / $len-grid-columns) * $i};
+        }
+
+        .col--#{$breakpoint}-offset-#{$i} {
+            margin-left: #{(100% / $len-grid-columns) * $i};
+        }
+    }
+}
+
+.row {
+    @include row-base;
+}
+
+[class^='col'], [class*=' col'] {
+    @include col-base;
+}
+
+//@each $bp, $bpWidth in $len-breakpoint {
+//    @include len-respond-to($bp) {
+//        @include row(#{$bp});
+//        @include col(#{$bp});
+//    }
+//}
