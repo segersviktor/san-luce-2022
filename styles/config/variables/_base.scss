@@ -1,0 +1,87 @@
+$rem-base: 16px !default; // in px
+$base-unit: 4px !default; // in px
+
+@import '../utils';
+
+$layout-min-width: 288px !default; // = smallest grid width on 320px viewport.
+
+/**
+ * Modular Scale
+ */
+$modular-scale: ( default: ( base: 16px, ratio: 1.14, ), small: ( ratio: 1.17, ), large: ( base: 18px, ratio: 1.21, ), huge: ( base: 20px, ratio: 1.25, ), ) !default;
+
+/**
+ * Animation & Transitions
+ */
+$easing: cubic-bezier(0.75, 0.02, 0.5, 1) !default;
+
+// To smooth circles in Chrome on subpixel, we define an scaling factor:
+$circle-smoothing-factor: 2 !default;
+
+/**
+ * Icons
+ */
+$icon-size-small: 24px !default;
+$icon-size-large: 48px !default;
+$icon-system-size-small: 23px !default;
+$icon-system-size-large: 45px !default;
+$icon-stroke-width: 1.1px !default;
+
+/**
+ * SVG
+ */
+$svg-arrow-width: 8px !default;
+$svg-arrow-height: 13px !default;
+
+/**
+ * Breakpoints
+ */
+$breakpoint: ( tiny : 480px, xsmall : 600px, small : 740px, medium : 960px, large : 1264px, xlarge : 1424px, huge : 1584px, ) !default;
+
+/**
+ * Card Component
+ */
+$card-spacing: unit(1) !default;
+
+/**
+ * Grid Component
+ */
+$grid-columns: 12 !default;
+$grid-gutters: unit(1) !default;
+$grid-container-offset: 4.375% !default; // in percent
+
+/**
+ * Visibility Component
+ */
+$visibility: ( tiny, xsmall, small, medium, large, xlarge, huge, );
+
+/**
+ * z-index
+ */
+$zindex-header: 100 !default;
+$dropdown-open-index: 1000 !default;
+$alert-zindex: 1700 !default;
+$notification-zindex: 1701 !default;
+$button-floating-zindex: 900 !default;
+$zindex-modal-backdrop: 1800 !default;
+$zindex-modal-morph: 1801 !default;
+$zindex-modal: 1900 !default;
+$zindex-dropdown: 1000 !default;
+$zindex-nav-dropdown-toggle: 1001 !default;
+$zindex-tooltip: 1002 !default;
+$zindex-popover: 1002 !default;
+$zindex-nav-sticky: 1001 !default;
+
+%hidden-input {
+    appearance: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    opacity: 0;
+    z-index: -1;
+}

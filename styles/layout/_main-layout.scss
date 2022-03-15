@@ -13,34 +13,4 @@ $b: 'main-layout';
         flex: 1 0 auto;
         display: flex;
     }
-
-    &__panel {
-        width: 100%;
-
-        //@include len-respond-to('medium') {
-        //    width: auto;
-        //    max-width: 65%;
-        //    min-width: 500px;
-        //}
-        //
-        //@include len-respond-to('large') {
-        //    min-width: 600px;
-        //}
-        //
-        //&--wider {
-        //    @include len-respond-to('medium') {
-        //        min-width: 45%;
-        //    }
-        //}
-    }
-
-    &__content-child {
-        display: flex;
-        width: 100%;
-    }
-}
-
-.#{$b}-wrapper {
-    display: flex; // IE11 fix
-    background-size: cover;
 }

@@ -1,0 +1,16 @@
+/**
+ * Form Field Components, like Textfield
+ */
+// $field-floating-label-padding: unit(4);
+$field-floating-label-padding: 0.6875rem !default;
+$field-floating-label-font-size: 0.75rem !default;
+$field-default-height: unit(10) !default;
+$field-line-height: 1.5 !default;
+$field-error-line-height: unit(5) !default;
+$field-error-color: $color-invalid !default;
+$field-disabled-opacity: 0.3 !default;
+$field-placeholder-color: rgba(#000, 0.6) !default;
+$field-placeholder-color-light: rgba(#fff, 0.6) !default;
+$field-transition-duration: 0.25s !default;
+$field-label-y: 0.5rem !default;
+$field-focus-line-height: 1px !default;

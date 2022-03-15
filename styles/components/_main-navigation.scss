@@ -1,0 +1,13 @@
+$b: 'main-navigation';
+
+.#{$b} {
+  position: relative;
+  z-index: 99;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(30) 4.375% rem(15);
+  }
+}
