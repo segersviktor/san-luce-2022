@@ -1,7 +1,8 @@
 $b: 'main-navigation';
 
 .#{$b} {
-  position: relative;
+  position: absolute;
+  width: 100%;
   z-index: 99;
 
   &__inner {
@@ -9,5 +10,119 @@ $b: 'main-navigation';
     justify-content: space-between;
     align-items: center;
     padding: rem(30) 4.375% rem(15);
+  }
+
+  // Navbar left side: Date
+  &__info {
+    display: block;
+    transition: all .2s ease-in;
+    font-weight: 900;
+    font-size: 1.8rem;
+    line-height: 25px;
+    text-transform: uppercase;
+
+    span {
+      display: block;
+    }
+
+    span:first-child {
+      color: $color-brand-base;
+    }
+
+    span:last-child {
+      color: $white;
+    }
+  }
+
+  // Navbar right side: Main navigation
+  &__menu {
+    display: block;
+    width: auto;
+    background-image: -webkit-linear-gradient(right, #ffa29c 5.19%, #643cfa 100%);
+    background-image: linear-gradient(270deg, #ffa29c 5.19%, #643cfa 100%);
+    padding: 10px;
+
+    &--list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+    &--item {
+      list-style: none;
+      padding-left: 0;
+
+      a {
+        text-decoration: none;
+        color: $white;
+        display: block;
+        font-weight: $font-weight-bold;
+        padding: 10px 15px;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: all .2s ease-in;
+
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+
+    &--cta {
+      margin-left: 1rem;
+      margin-right: 1.5rem;
+
+      a {
+        border: 3px solid $white;
+        padding: 8px 14px;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        text-decoration: none;
+        background-image:
+                linear-gradient(to top, #ffffff 50%, #000000 50%),
+                linear-gradient(to top, #000000 50%, transparent 50%);
+        -webkit-background-clip: text,padding-box;
+        background-clip: text,padding-box;
+        background-size: 100% 200%;
+        background-position: top;
+        transition: background-position 0.1s ease-in-out;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $white;
+          background-position: bottom;
+          border-color: $black;
+        }
+      }
+    }
+
+    .is-active {
+      position: relative;
+      a {
+        color: $black;
+        &:after {
+          content: "";
+          background: $black;
+          width: calc(100% - 30px);
+          height: 3px;
+          position: absolute;
+          left: 50%;
+          bottom: 5px;
+          transform: translateX(-50%);
+        }
+      }
+    }
   }
 }

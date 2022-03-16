@@ -2,15 +2,9 @@ $b: 'main-layout';
 
 .#{$b} {
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
     position: relative;
     z-index: 1;
     overflow: hidden;
     width: 100%;
-
-    &__content {
-        flex: 1 0 auto;
-        display: flex;
-    }
 }

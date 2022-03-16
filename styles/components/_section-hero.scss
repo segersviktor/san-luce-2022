@@ -1,0 +1,21 @@
+$b: 'section-hero';
+
+.#{$b} {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__wrapper {
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.73))
+  }
+
+  &__logo {
+    width: auto;
+    height: 300px;
+    filter: brightness(0) invert(1);
+  }
+}
