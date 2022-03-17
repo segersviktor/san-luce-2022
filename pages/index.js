@@ -50,11 +50,11 @@ const Home = ({params}) => {
                     </div>
                 </div>
                 <div className="section-countdown__wrapper">
-                    <div className="section-countdown">
+                    <div className="section-countdown container-xxl">
                         { started ? (
                             <p className='section-countdown__text'>San luce 2022 is begonnen!!</p>
                         ) : (
-                            <p className='section-countdown__text'>San Luce 2022: {days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                            <p className='section-countdown__text'>San Luce 2022 - {days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
                         )}
                     </div>
                 </div>

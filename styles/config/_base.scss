@@ -1,5 +1,13 @@
-$spacers: (
-    '0': 0,
-    '1': 1rem,
-    '2': 2rem,
-);
+$spacers:              (
+                               '0': 0,
+                               '1': 1rem,
+                               '2': 2rem,
+                       );
+
+$container-max-widths: (
+                               sm: 540px,
+                               md: 720px,
+                               lg: 960px,
+                               xl: 1140px,
+                               xxl: 1533px
+                       );
