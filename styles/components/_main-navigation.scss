@@ -38,8 +38,10 @@ $b: 'main-navigation';
   &__menu {
     display: block;
     width: auto;
-    background-image: -webkit-linear-gradient(right, #ffa29c 5.19%, #643cfa 100%);
-    background-image: linear-gradient(270deg, #ffa29c 5.19%, #643cfa 100%);
+    background-image: -webkit-linear-gradient(right, #EB3617 5.19%, #189E64 100%);
+    //background-image: -webkit-linear-gradient(right, #ffa29c 5.19%, #643cfa 100%);
+    background-image: linear-gradient(270deg, #EB3617 5.19%, #189E64 100%);
+    //background-image: linear-gradient(270deg, #ffa29c 5.19%, #643cfa 100%);
     padding: 10px;
 
     &--list {

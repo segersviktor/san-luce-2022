@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 
 import MasterLayout from '../components/master-layout';
+import SectionAbout from "../components/section-about";
 
 const Home = ({params}) => {
 
@@ -50,14 +51,39 @@ const Home = ({params}) => {
                     </div>
                 </div>
                 <div className="section-countdown__wrapper">
-                    <div className="section-countdown container-xxl">
+                    <div className="section-countdown__inner">
                         { started ? (
-                            <p className='section-countdown__text'>San luce 2022 is begonnen!!</p>
+                            <section className="section-countdown container-xxl">
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - Tis begonnen!</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - Tis begonnen!</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - Tis begonnen!</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - Tis begonnen!</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - Tis begonnen!</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
+                            </section>
                         ) : (
-                            <p className='section-countdown__text'>San Luce 2022 - {days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                            <section className="section-countdown container-xxl">
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - {days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - {days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - {days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - {days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - {days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - {days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                                <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
+                            </section>
                         )}
                     </div>
                 </div>
+                <SectionAbout />
             </div>
         </MasterLayout>
     );

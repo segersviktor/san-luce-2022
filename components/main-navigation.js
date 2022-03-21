@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Link from 'next/link';
 import { useRouter } from "next/router";
 
@@ -48,7 +47,7 @@ const MainNavigation = () => {
                                 </a>
                             </Link>
                         </li>
-                        <li  className='main-navigation__menu--item main-navigation__menu--cta'>
+                        <li className='main-navigation__menu--item main-navigation__menu--cta'>
                             <Link href='#'>
                                 <a>
                                     Tickets

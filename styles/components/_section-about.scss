@@ -1,0 +1,31 @@
+$b: 'section-about';
+
+.#{$b} {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+
+  &__wrapper {
+    background: $black;
+    padding: 20px;
+    padding-top: 0;
+  }
+
+  &__inner {
+    color: $white;
+    width: 365px;
+    margin-right: 75px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__movie {
+    max-width: 60%;
+
+    &--player {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
