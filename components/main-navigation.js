@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { useRouter } from "next/router";
 
 const MainNavigation = () => {
-
     const router = useRouter();
 
     return (
@@ -29,14 +28,14 @@ const MainNavigation = () => {
                         <li  className='main-navigation__menu--item'>
                             <Link href='#'>
                                 <a>
-                                    Line Up
+                                    Line-Up
                                 </a>
                             </Link>
                         </li>
                         <li  className='main-navigation__menu--item'>
                             <Link href='#'>
                                 <a>
-                                    Contact
+                                    Info
                                 </a>
                             </Link>
                         </li>

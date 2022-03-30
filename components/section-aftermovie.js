@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 
-const SectionAbout = () => {
+const SectionAfterMovie = () => {
 
     return (
-        <div className="section-about__wrapper">
-            <div className="section-about">
-                <div className="section-about__inner">
+        <section className="section-aftermovie__wrapper">
+            <div className="section-aftermovie">
+                <div className="section-aftermovie__inner">
                     <h1>Lorem ipsum dolor!</h1>
                     <br/>
                     <p className='text'>
@@ -25,18 +25,18 @@ const SectionAbout = () => {
                         </a>
                     </Link>
                 </div>
-                <div className="section-about__movie">
+                <div className="section-aftermovie__movie">
                     <video
                         controls
                         src={ "/media/aftermovie.mp4" }
                         autoPlay
                         muted
                         loop
-                        className='section-about__movie--player' />
+                        className='section-aftermovie__movie--player' />
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
-export default SectionAbout;
+export default SectionAfterMovie;
