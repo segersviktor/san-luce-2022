@@ -1,0 +1,49 @@
+$b: 'main-footer';
+
+.#{$b} {
+  color: $white;
+  border-top: 1px solid $white;
+  margin-top: 75px;
+  padding-top: 50px;
+
+  &__wrapper {
+    background-color: $black;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  &__menu {
+    padding: 0;
+    &--socials {
+      list-style-type: none;
+
+      li {
+        display: inline-block;
+        margin: 0 20px 0 0;
+
+        a {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    li {
+      list-style: none;
+      color: lighten($black, 50%);
+      padding: 10px 0;
+
+      a {
+        transition: all .2s ease-in;
+
+        &:hover {
+          text-decoration: none;
+          color: $white;
+        }
+      }
+    }
+  }
+}

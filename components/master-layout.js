@@ -3,6 +3,7 @@ import NextHead from 'next/head';
 
 import MainNavigation from "./main-navigation";
 import MainContent from './main-content';
+import MainFooter from "./main-footer";
 
 const MasterLayout = ({ children, background }) => {
 
@@ -23,7 +24,7 @@ const MasterLayout = ({ children, background }) => {
                     <MainContent>
                         { children }
                     </MainContent>
-                    {/*<MainFooter />*/}
+                    <MainFooter />
                 </div>
             </div>
         </>
