@@ -10,7 +10,7 @@ const MainFooter = () => {
         <footer className="main-footer__wrapper">
             <div className="main-footer container">
                 <div className="row">
-                    <div className="col-sm">
+                    <div className="col">
                         <p className="main-footer__subtitle title">
                             Volg ons op
                         </p>
@@ -31,18 +31,11 @@ const MainFooter = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-sm">
+                    <div className="col">
                         <p className="main-footer__subtitle title">
                             Algemeen
                         </p>
                         <ul className="main-footer__menu">
-                            <li>
-                                <Link href='#'>
-                                    <a>
-                                        Startpagina
-                                    </a>
-                                </Link>
-                            </li>
                             <li>
                                 <Link href='#'>
                                     <a>
@@ -66,7 +59,7 @@ const MainFooter = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-sm">
+                    <div className="col">
                         <p className="main-footer__subtitle title">
                             Locatie
                         </p>
@@ -83,14 +76,11 @@ const MainFooter = () => {
                         </ul>
                     </div>
                 </div>
-
-                - Socials
-                - Adres
-                - Email
-
-                {/*<div className="main-footer__body">{ new Date().getFullYear() } { __('site.footer.copyright') }</div>*/}
-
-
+                <div className="main-footer__copyright">
+                    <span>
+                        &copy; { new Date().getFullYear() } San Luce
+                    </span>
+                </div>
             </div>
         </footer>
     );

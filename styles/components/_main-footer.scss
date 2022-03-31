@@ -14,6 +14,7 @@ $b: 'main-footer';
     font-size: 1.5rem;
     font-weight: 900;
     text-transform: uppercase;
+    padding: 0 10px;
   }
 
   &__menu {
@@ -33,17 +34,29 @@ $b: 'main-footer';
 
     li {
       list-style: none;
-      color: lighten($black, 50%);
+      color: $white;
       padding: 10px 0;
-
       a {
         transition: all .2s ease-in;
+        border: 1px solid transparent;
+        padding: 10px;
 
         &:hover {
-          text-decoration: none;
           color: $white;
+          text-decoration: none;
+          border-color: $white;
         }
       }
+    }
+  }
+
+  &__copyright {
+    margin-bottom: 25px;
+    span {
+      color: $black;
+      background-color: $white;
+      padding: 10px;
+      font-weight: 700;
     }
   }
 }
