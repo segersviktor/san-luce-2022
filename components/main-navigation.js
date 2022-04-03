@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { useRouter } from "next/router";
+import {useRouter} from "next/router";
 
 const MainNavigation = () => {
     const router = useRouter();
@@ -9,12 +9,16 @@ const MainNavigation = () => {
         <header className='main-navigation'>
             <div className='main-navigation__inner'>
                 <div className='main-navigation__info'>
-                    <span>
-                        12-13
-                    </span>
-                    <span>
-                        aug 2022
-                    </span>
+                    <Link href="/">
+                        <a>
+                            <span>
+                                12-13
+                            </span>
+                            <span>
+                                aug 2022
+                            </span>
+                        </a>
+                    </Link>
                 </div>
                 <nav className='main-navigation__menu'>
                     <ul className='main-navigation__menu--list'>
@@ -25,21 +29,21 @@ const MainNavigation = () => {
                                 </a>
                             </Link>
                         </li>
-                        <li  className='main-navigation__menu--item'>
-                            <Link href='#'>
+                        <li className={ (router.pathname === "/line-up" ? 'main-navigation__menu--item is-active' : 'main-navigation__menu--item') }>
+                            <Link href="/line-up">
                                 <a>
                                     Line-Up
                                 </a>
                             </Link>
                         </li>
-                        <li  className='main-navigation__menu--item'>
+                        <li className='main-navigation__menu--item'>
                             <Link href='#'>
                                 <a>
                                     Info
                                 </a>
                             </Link>
                         </li>
-                        <li  className='main-navigation__menu--item'>
+                        <li className='main-navigation__menu--item'>
                             <Link href='#'>
                                 <a>
                                     Faq

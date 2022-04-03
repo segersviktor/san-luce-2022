@@ -2,8 +2,11 @@ import React from 'react';
 
 import MasterLayout from '../components/master-layout';
 import Countdown from "../components/render/countdown";
-import SectionAfterMovie from "../components/section-aftermovie";
-import Link from 'next/link';
+import SectionAfterMovie from "../components/render/section-aftermovie";
+
+// TODO
+// - Replace all # links with active url
+// - SEO
 
 const Home = () => {
     return (

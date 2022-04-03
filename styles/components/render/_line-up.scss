@@ -1,0 +1,14 @@
+$b: 'item';
+
+.#{$b} {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  position: relative;
+
+  &__title {
+    padding: 2rem;
+
+  }
+}
