@@ -1,14 +1,48 @@
-$b: 'item';
+$b: 'line-up';
 
 .#{$b} {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: red;
-  position: relative;
 
-  &__title {
-    padding: 2rem;
+  &__item {
+    position: relative;
+    cursor: pointer;
+
+    &--name {
+      font-weight: 900;
+      font-size: 1.75rem;
+      line-height: 25px;
+      text-transform: uppercase;
+      padding: 15px 20px;
+      display: inline-block;
+      position: absolute;
+      color: $black;
+      background: $white;
+      top: 25px;
+      left: 25px;
+    }
+
+    &--date {
+      position: absolute;
+      bottom: 25px;
+      left: 25px;
+
+      span {
+        transition: all .2s ease-in;
+        font-weight: 900;
+        font-size: 1rem;
+        line-height: 25px;
+        text-transform: uppercase;
+        padding: 10px;
+      }
+
+      span:first-child {
+        background-image: -webkit-linear-gradient(right, #189E64 5.19%, #EB3617 100%);
+        background-image: linear-gradient(270deg, #189E64 5.19%, #EB3617 100%);
+      }
+      span:last-child {
+        background-color: $white;
+        color: $black;
+      }
+    }
 
   }
 }
