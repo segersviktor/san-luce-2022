@@ -37,7 +37,7 @@ const MainFooter = () => {
                         </p>
                         <ul className="main-footer__menu">
                             <li>
-                                <Link href='#'>
+                                <Link href='/tickets'>
                                     <a>
                                         Tickets
                                     </a>

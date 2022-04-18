@@ -19,7 +19,7 @@ const SectionAfterMovie = () => {
                         </a>
                     </Link>
                     <br/>
-                    <Link href='#'>
+                    <Link href='/tickets'>
                         <a className='btn btn-light'>
                             Tickets
                         </a>

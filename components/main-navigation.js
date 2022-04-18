@@ -51,8 +51,8 @@ const MainNavigation = () => {
                             </Link>
                         </li>
                         <li className='main-navigation__menu--item main-navigation__menu--cta'>
-                            <Link href='#'>
-                                <a>
+                            <Link href='/tickets'>
+                                <a className={ (router.pathname === "/tickets" ? 'is-active' : '') }>
                                     Tickets
                                 </a>
                             </Link>

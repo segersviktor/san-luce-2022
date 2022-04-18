@@ -97,14 +97,14 @@ $b: 'main-navigation';
                 linear-gradient(to top, #ffffff 50%, #000000 50%),
                 linear-gradient(to top, #000000 50%, transparent 50%);
         -webkit-background-clip: text,padding-box;
-        background-clip: text,padding-box;
         background-size: 100% 200%;
         background-position: top;
         transition: background-position 0.1s ease-in-out;
 
         &:hover,
         &:focus,
-        &:active {
+        &:active,
+        &.is-active {
           color: $white;
           background-position: bottom;
           border-color: $black;

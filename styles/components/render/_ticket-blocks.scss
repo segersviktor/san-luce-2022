@@ -1,0 +1,57 @@
+$b: 'ticket-blocks';
+
+.#{$b} {
+  display: grid;
+  grid-gap: rem(20);
+  gap: rem(20);
+  grid-template-rows: auto;
+  margin: 50px 0;
+  grid-template-columns: auto auto auto;
+
+  &__item {
+    align-items: center;
+    color: $black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-weight: $font-weight-bold;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: $white;
+    cursor: pointer;
+
+    &:first-of-type {
+      background: lighten(#189E64, 25);
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    &--title {
+      font-size: 2rem;
+    }
+
+    &--description {
+      font-size: 1.25rem;
+      margin: 1rem 0;
+    }
+
+    &--price {
+      font-size: 1.25rem;
+      line-height: 1;
+
+      sub {
+        font-size: .8rem;
+        font-weight: $font-weight-light;
+        text-transform: none;
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $black;
+      opacity: 1;
+    }
+  }
+}
