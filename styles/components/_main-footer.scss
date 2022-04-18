@@ -19,18 +19,6 @@ $b: 'main-footer';
 
   &__menu {
     padding: 0;
-    &--socials {
-      list-style-type: none;
-
-      li {
-        display: inline-block;
-        margin: 0 20px 0 0;
-
-        a {
-          font-size: 1.5rem;
-        }
-      }
-    }
 
     li {
       list-style: none;
@@ -45,6 +33,23 @@ $b: 'main-footer';
           color: $white;
           text-decoration: none;
           border-color: $white;
+        }
+      }
+    }
+
+    &--socials {
+      list-style-type: none;
+
+      li {
+        display: inline-block;
+        margin: 0 10px 0 0;
+
+        a {
+          font-size: 1.5rem;
+
+          &:hover {
+            border-color: transparent;
+          }
         }
       }
     }

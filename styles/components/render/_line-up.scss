@@ -1,14 +1,21 @@
 $b: 'line-up';
 
 .#{$b} {
-
   &__item {
-    position: relative;
     cursor: pointer;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &--name {
       font-weight: 900;
-      font-size: 1.75rem;
+      font-size: 1.5rem;
       line-height: 25px;
       text-transform: uppercase;
       padding: 15px 20px;
@@ -42,6 +49,32 @@ $b: 'line-up';
         background-color: $white;
         color: $black;
       }
+    }
+
+    // Hover animation
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-color: $white;
+      border-style: solid;
+      border-width: 0;
+      -webkit-transition-property: border-width;
+      transition-property: border-width;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+
+    &:hover:before, &:focus:before, &:active:before {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      border-width: 7.5px;
     }
 
   }

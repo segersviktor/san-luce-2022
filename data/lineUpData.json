@@ -1,36 +1,55 @@
 {
   "data": [
     {
-      "name": "Speedy José",
+      "name": "Discobar Joossens feat. MC Koen Crucke",
       "headliner": false,
       "date": "friday",
       "time": "20:00 - 23:30",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at impedit iure nulla pariatur quisquam repudiandae rerum ullam? Beatae consequuntur facere incidunt ipsam laboriosam magni molestias neque officia velit voluptates?\n",
-      "image": "placeholderA.jpg",
-      "social_fb": "",
-      "social_insta": "",
-      "social_spotify": ""
+      "description": "Michaël en Laurence Joossens zijn broers met een sterke band voor elkaar en voor muziek. Deze connectie willen ze maar al te graag delen met het publiek en daarvoor nemen ze hun goede vriend Koen Crucke mee.",
+      "image": "discobar-joossens.jpeg",
+      "socials": {
+        "instagram": "test",
+        "facebook": "https://www.facebook.com/Discobar-Joossens-109796454157250/",
+        "spotify": "test"
+      }
     },
     {
-      "name": "Speedy José",
+      "name": "Ronny Retro",
       "headliner": false,
       "date": "friday",
-      "time": "20:00 - 23:30",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at impedit iure nulla pariatur quisquam repudiandae rerum ullam? Beatae consequuntur facere incidunt ipsam laboriosam magni molestias neque officia velit voluptates?\n",
-      "social_fb": "",
-      "social_insta": "",
-      "social_spotify": "",
-      "image": "placeholderA.jpg"
+      "time": "23:30 - 02:00",
+      "description": "Kendeeeemm?? Tis den iejenigen echte, den Dj Ronny Retro mannekes, astemblief seg.\nGeboren in Antwaarpe oep 6 september 1969, ni toevallig 6/9/69 he gaste. Sinds men 20 jaar actief achter de draaitafels oep de zotste foave en in de graafste cafés, ondertusse internationaal bekend van Blankenbaarge tot in Hasselt. As ge ne grave party Dj zukt, dan zedde bij mij ont juste adres. Seventies, eighties, nineties, twieduuzendties, boenk, noemt mor oep, ik speul da. Kzou zegge gaste, ni twijfele, wilde sfeer? Dan wilde de Ronny Retro oep aaw fiejest! Kzeg altij: Ne curryweust is goe, mor ne mexicano is veul better. Kzien elle oept fiejesje gaste!",
+      "socials": {
+        "instagram": "test",
+        "facebook": "test",
+        "spotify": "test"
+      },
+      "image": "ronny-retro.jpeg"
     },
     {
-      "name": "Speedy José",
+      "name": "LOUISAX",
       "headliner": false,
-      "date": "friday",
+      "date": "saturday",
       "time": "20:00 - 23:30",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at impedit iure nulla pariatur quisquam repudiandae rerum ullam? Beatae consequuntur facere incidunt ipsam laboriosam magni molestias neque officia velit voluptates?\n",
-      "social_fb": "",
-      "social_insta": "",
-      "social_spotify": "",
+      "description": "Louisax, een jaren 90 kiddo die al op vroege leeftijd geïnspireerd werd door verschillende muziekgenres. Met zijn magische ritmiek in de vingers koos hij al snel voor piano. Van dit instrument sprong hij over naar zijn heilige ‘Sax’ waarvoor hij al snel in de wieg bleek gelegd te zijn.\n\nDoor de combinatie van entertainment en zijn gave voor muziek, ontpopte Louisax zich tot de perfecte partyleader!\nHij blaast je zo omver met zijn magnifieke live acts! \n\nHij speelde al op verschillende festivals waaronder Sunrise, Tomorrowland, Dance-D-Vision, Walhalla & meer.",
+      "socials": {
+        "instagram": "test",
+        "facebook": "test",
+        "spotify": "test"
+      },
+      "image": "louisax.jpeg"
+    },
+    {
+      "name": "Schattige katjes",
+      "headliner": false,
+      "date": "saturday",
+      "time": "23:30 03:30",
+      "description": "...",
+      "socials": {
+        "instagram": "test",
+        "facebook": "test",
+        "spotify": "test"
+      },
       "image": "placeholderA.jpg"
     }
   ]

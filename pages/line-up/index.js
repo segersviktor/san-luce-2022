@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
-
-import MasterLayout from '../components/master-layout';
-import MainHeader from "../components/main-header";
+import Link from 'next/link';
+import MasterLayout from '../../components/master-layout';
+import MainHeader from "../../components/main-header";
 import {useRouter} from "next/router";
-import lineUpData from '../data/lineUpData.json';
+import lineUpData from '../../data/lineUpData.json';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faFacebook, faInstagram, faSpotify} from "@fortawesome/free-brands-svg-icons";
 
-const LineUp = ({lineUpData}) => {
+const Query = ({lineUpData}) => {
     const router = useRouter();
     const [expandedDetails, setExpandedDetails] = useState(false);
     const [detailsTitle, setDetailsTitle] = useState('');
@@ -13,6 +15,7 @@ const LineUp = ({lineUpData}) => {
     const [detailsImage, setDetailsImage] = useState('');
     const [detailsDay, setDetailsDay] = useState('');
     const [detailsHour, setDetailsHour] = useState('');
+    const [socials, setSocials] = useState('');
 
     const toggleModal = (event) => {
         event.preventDefault();
@@ -26,8 +29,13 @@ const LineUp = ({lineUpData}) => {
             setExpandedDetails(!expandedDetails);
             setDetailsDay(item.day);
             setDetailsHour(item.hour);
+            setSocials(item.socials);
         }
     };
+
+    const closeModal = (event) => {
+        setExpandedDetails(false);
+    }
 
     const getDetailInfo = (item) => {
         return JSON.stringify({
@@ -35,7 +43,8 @@ const LineUp = ({lineUpData}) => {
             'description': item.description,
             'image': item.image,
             'day': item.date,
-            'hour': item.time
+            'hour': item.time,
+            'socials': item.socials
         });
     };
 
@@ -47,21 +56,21 @@ const LineUp = ({lineUpData}) => {
                     <div className="container">
                         <div>
                             <ul className="section-line-up__menu">
-                                <li className={ (router.pathname === "/line-up" ? 'main-navigation__menu--item is-active' : 'main-navigation__menu--item') }>
-                                    <a href="">Release date</a>
+                                <li className="main-navigation__menu--item is-active">
+                                    <Link href="/line-up">Release date</Link>
                                 </li>
-                                <li>
-                                    <a href="">Vrijdag</a>
+                                <li className="main-navigation__menu--item">
+                                    <Link href="/line-up/friday">Vrijdag</Link>
                                 </li>
-                                <li>
-                                    <a href="">Zaterdag</a>
+                                <li className="main-navigation__menu--item">
+                                    <Link href="/line-up/saturday">Zaterdag</Link>
                                 </li>
                             </ul>
                         </div>
                         <section className="section-line-up__inner">
                             <div className="grid line-up">
                                 {lineUpData.map((item, index) => {
-                                    const backgroundImage = `linear-gradient(to bottom left, rgba(235, 54, 23, 0.5), rgba(24, 158, 100, 0.5)), url('images/cards/${item.image}')`;
+                                    const backgroundImage = `linear-gradient(to bottom left, rgba(235, 54, 23, 0.5), rgba(24, 158, 100, 0.5)), url('images/lineup/${item.image}')`;
                                     return (
                                         <div
                                             key={ index }
@@ -85,37 +94,50 @@ const LineUp = ({lineUpData}) => {
                     </div>
                 </div>
             </div>
-            <div className="fade modal dialog__backdrop" hidden={ !expandedDetails }>
-                <div className="dialog">
-                    <div className="dialog__image">
-                        <img src={ `/images/cards/${detailsImage}` } alt={ `${detailsTitle} image` } />
-                    </div>
+            <div className="dialog" hidden={ !expandedDetails }>
+                <div className="dialog__image">
+                    <img src={ `/images/lineup/${detailsImage}` } alt={ `${detailsTitle} image` }/>
+                </div>
+                <div className="dialog__inner">
                     <div className="dialog__title">
-                        <h3>{ detailsTitle }</h3>
+                        <h3>{detailsTitle}</h3>
                     </div>
                     <div className="dialog__description">
                         <p className="text">
-                            { detailsDescription }
+                            {detailsDescription}
                         </p>
                     </div>
-                    <div className="dialog__date">
-                        <span>{ detailsDay }</span>
-                        <span>{ detailsHour }</span>
+                    <div className="dialog__bottom">
+                        <div className="dialog__bottom--date">
+                            <span>{detailsDay}</span>
+                            <span>{detailsHour}</span>
+                        </div>
+                        <div className="dialog__bottom--socials">
+                            {socials.facebook !== '' ? (
+                                <a target="_blank" className="socials--item" href={ socials.facebook } rel="noreferrer"><FontAwesomeIcon icon={ faFacebook }/></a>
+                            ) : ''}
+                            {socials.instagram !== '' ? (
+                                <a target="_blank" className="socials--item" href={ socials.instagram } rel="noreferrer"><FontAwesomeIcon icon={ faInstagram }/></a>
+                            ) : ''}
+                            {socials.spotify !== '' ? (
+                                <a target="_blank" className="socials--item" href={ socials.spotify } rel="noreferrer"><FontAwesomeIcon icon={ faSpotify }/></a>
+                            ) : ''}
+                        </div>
                     </div>
                     <div className="dialog__actions">
                         <button>Close</button>
                     </div>
                 </div>
             </div>
+            <div className="fade modal dialog__backdrop" hidden={ !expandedDetails } onClick={ closeModal } />
         </MasterLayout>
     );
 };
 
 export const getStaticProps = async () => {
-
     return {
         props: {lineUpData: lineUpData.data},
     };
 };
 
-export default LineUp;
+export default Query;

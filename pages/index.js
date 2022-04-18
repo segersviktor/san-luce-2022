@@ -13,7 +13,7 @@ const Home = () => {
         <MasterLayout>
             <div className="main-layout__content">
                 <div className="section-hero__wrapper"
-                     style={{backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(\'images/sanluce-banner.jpeg\')'}}>
+                     style={{backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(images/sanluce-banner.jpeg)'}}>
                     <div className="section-hero">
                         <img src={'/images/sanluce-green.png'} alt='Logo San Luce' className='section-hero__logo'/>
                     </div>
