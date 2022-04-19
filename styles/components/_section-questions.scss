@@ -1,0 +1,114 @@
+$b: 'questions';
+
+.#{$b} {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #666666;
+  margin-bottom: rem(50);
+
+  &__item {
+    color: $white;
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+    border-bottom: 2px solid #666666;
+
+    &--icon {
+      transition: all 0.3s ease;
+    }
+
+    &--question {
+      padding: rem(15) 0;
+      font-size: 1.2rem;
+      font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+
+      &.is-active {
+        border-bottom: 2px solid #666666;
+
+        .#{$b}__item--icon {
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    &--answer {
+      color: #8d8585;
+      margin: 0 rem(10);
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      text-align: left;
+      cursor: default;
+
+      &.is-active {
+        margin: rem(10);
+        display: block;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          margin: 0;
+          position: relative;
+          padding-left: 1.5em;
+
+          &:before {
+            background-color: #8d8585;
+            border-radius: 50%;
+            content: "";
+            display: block;
+            height: 0.6rem;
+            left: .25em;
+            position: absolute;
+            bottom: 0.6em;
+            width: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  &--other {
+    margin-bottom: 0;
+    border-bottom: none;
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        color: $color-brand-base;
+      }
+    }
+  }
+}
+
+.section-questions {
+  background-color: $black;
+  color: $white;
+  padding-top: 50px;
+
+  h3 {
+    margin-bottom: rem(10);
+    position: relative;
+    display: inline-block;
+    padding: 10px 0;
+
+    &:after {
+      content: "";
+      background-image: -webkit-linear-gradient(right, #EB3617 5.19%, #189E64 100%);
+      background-image: linear-gradient(270deg, #EB3617 5.19%, #189E64 100%);
+      width: 100%;
+      height: 3px;
+      position: absolute;
+      left: 50%;
+      bottom: 5px;
+      transform: translateX(-50%);
+    }
+
+  }
+}

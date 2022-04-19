@@ -1,0 +1,72 @@
+{
+  "Praktisch": [
+    {
+      "question": "Wanneer is San Luce?",
+      "answer": [
+        "Het festival gaat door van vrijdagavond 12 augustus 2022 tot en met zaterdag 13 augustus 2022."
+      ]
+    },
+    {
+      "question": "Hoe oud moet ik zijn?",
+      "answer": ["San Luce heeft een minimum leeftijd van 16+."]
+    },
+    {
+      "question": "Wisselbekers",
+      "answer": [
+        "Aangezien wij een duurzaam festival zijn geloven wij niet in wegwerpbekers. Er zijn daarom herbruikbare bekers.",
+        "Je betaalt voor je beker één jeton. Als je de beker terug inruilt, krijg je de opvoorhand betaalde kost terug."
+      ]
+    },
+    {
+      "question": "Is er een vestiare",
+      "answer": ["Ons evenement is volledig openlucht. Daardoor is er geen vestiare."]
+    },
+    {
+      "question": "Sluitingstijd",
+      "answer": [
+        "De muziek start om 21:00 en stopt om 03:00.",
+        "Onze toog is open tot 02:45.",
+        "De verkoop van drankbonnen stopt om 02:30.",
+        "Bonnen zijn geldig tijdens de volledige lichtfeesten over het volledige domein. Dit wil zeggen dat je met je bonnen zowel op de San Luce weide als in de wijk kan betalen."
+      ]
+    }
+  ],
+  "Tickets": [
+    {
+      "question": "Terugbetaling",
+      "answer": [
+        "Er worden geen tickets terugbetaald."
+      ]
+    },
+    {
+      "question": "Kan ik nog tickets aan de kassa kopen?",
+      "answer": [
+        "Er zijn nog steeds tickets te koop aan de kassa. We houden ons wel aan de regel vol is vol. Dit wil zeggen dat als de capaciteit bereikt is, inkom zonder tickets geweigerd wordt."
+      ]
+    }
+  ],
+  "Hoe geraak ik op San Luce?": [
+    {
+      "question": "Met de fiets",
+      "answer": [
+        "Het festivalterrein is het beste bereikbaar met de fiets. Er is een fietsenstalling voorzien waar je je fiets veilig kan achterlaten."
+      ]
+    },
+    {
+      "question": "Met het openbaar vervoer",
+      "answer": [
+        "De lichtfeesten zijn makkelijk te bereiken met het openbaar vervoer. Afstappen doe je best aan de bushalte Rozenlaan. Deze bevindt zich op enkele meters van de hoofdinkom.",
+        "Lijn 181 (Groenplaats – Aartselaar – Rumst) – halte Rozenlaan.",
+        "Lijn 295 (Antwerpen – Niel – Predikherenvelden – Boom ) – halte Rozenlaan."
+      ]
+    },
+    {
+      "question": "Met de auto",
+      "answer": [
+        "Er zijn 2 betalende parkings voor auto’s in de Predikherenhoevestraat. (€5/voertuig).",
+        "Er zijn parkingplaatsen voor mindervaliden voorzien ter hoogte van de school in de Predikherenhoevestraat.",
+        "Er zijn gratis parkeerplaatsen voor auto’s in de Beukenlaan aan het Gemeentelijk Park van Boom."
+      ]
+    }
+  ]
+}

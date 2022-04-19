@@ -3,7 +3,7 @@ import Link from 'next/link';
 import MasterLayout from '../../components/master-layout';
 import MainHeader from "../../components/main-header";
 import {useRouter} from "next/router";
-import lineUpData from '../../data/lineUpData.json';
+import lineUpData from '../../data/line-up.json';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faInstagram, faSpotify} from "@fortawesome/free-brands-svg-icons";
 

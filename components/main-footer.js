@@ -51,7 +51,7 @@ const MainFooter = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href='#'>
+                                <Link href='/info'>
                                     <a>
                                         FAQ
                                     </a>
