@@ -39,6 +39,13 @@ const MainNavigation = () => {
                         <li className={ (router.pathname === "/info" ? 'main-navigation__menu--item is-active' : 'main-navigation__menu--item') }>
                             <Link href='/info'>
                                 <a>
+                                    Info
+                                </a>
+                            </Link>
+                        </li>
+                        <li className={ (router.pathname === "/faq" ? 'main-navigation__menu--item is-active' : 'main-navigation__menu--item') }>
+                            <Link href='/faq'>
+                                <a>
                                     FAQ
                                 </a>
                             </Link>

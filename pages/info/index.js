@@ -1,43 +1,32 @@
 import React from 'react';
 import MasterLayout from "../../components/master-layout";
 import MainHeader from "../../components/main-header";
-import questionData from "../../data/faq.json";
-import Question from "../../components/render/question";
 
-const Faq = ({questions}) => {
+const Info = () => {
+    const backgroundImage = `linear-gradient(to bottom left, rgba(235, 54, 23, 0.5), rgba(24, 158, 100, 0.5)), url('../images/crew.png')`;
+
     return (
         <MasterLayout>
             <div className="main-layout__content">
                 <MainHeader/>
-                <div className="section-questions">
-                    <section className="container">
-                        <h3>Praktisch</h3>
-                        <div className="questions">
-                            { questions['Praktisch'].map((item, key) => {
-                                return (
-                                    <Question key={ key } question={ item.question } answer={ item.answer } />
-                                )
-                            }) }
+                <div className="section-info">
+                    <section className="section-info__about">
+                        <div className="section-info__about--inner">
+                            <h3>Wat is San Luce?</h3>
+                            <p className="text">
+                                Het idee van San Luce ontstond in het jaar 2007 uit een initiatief van enkele jongeren uit de kleinlandeigendom. Deze jonge heren wouden met dit evenement een nieuw facet geven aan de Lichtfeesten . Tijdens deze Lichtfeesten versieren alle inwoners van de kleinlandeigendom te Reet hun huizen en voortuinen met lichtjes en maken er op deze manier een feeëriek spektakel van waar vanalles te beleven is.
+                            </p>
+                            <p className="text">
+                                Dit nieuwe San Luce organiseerde ze door, op een geweldig ingekleede locatie, geweldige live artiesten en DJ's te laten komen. In 2014 nam een nieuwe garde van organisators de touwen in hand en gaf het festival een groeispurt van 500 man naar een kleine 2500 feestvierdes per avond.
+                            </p>
+                            <p className="text">
+                                Deze garde organiseert vrijdag en zatedag tijdens de lichtfeesten een groots muzikaal en lichtspectakel. Zo hebben we afgelopen nationale artiesten als Tourist LeMC, Soul Shakers, Daisy, Average Rob, Alpharock, Stijn van De Voorde,... op ons podium hebben zien optreden.
+                            </p>
+                            <p className="text">
+                                Hiernaast wordt er ook plaats gehouden voor het lokale talent. Track-Thor is de afgelopen 5 jaar al een vaste afsluiter voor San Luce. Daarnaast komen ook DJ DIVS en RBE op ons podium optreden, die eveneens trotste wijkbewoners zijn.
+                            </p>
                         </div>
-                        <h3>Tickets</h3>
-                        <div className="questions">
-                            { questions['Tickets'].map((item, key) => {
-                                return (
-                                    <Question key={ key } question={ item.question } answer={ item.answer } />
-                                )
-                            }) }
-                        </div>
-                        <h3>Hoe geraak ik op San Luce?</h3>
-                        <div className="questions">
-                            { questions['Hoe geraak ik op San Luce?'].map((item, key) => {
-                                return (
-                                    <Question key={ key } question={ item.question } answer={ item.answer } />
-                                )
-                            }) }
-                        </div>
-                        <div className="questions questions--other">
-                            {/*TODO MAIL ADRES*/}
-                            <p className="text">Voor meer info kan je ons altijd bereiken op <a href="mailto:lennert.slabbinck@hotmail.be">info@sanluce.be</a></p>
+                        <div className="section-info__about--image" style={{backgroundImage: backgroundImage}}>
                         </div>
                     </section>
                 </div>
@@ -46,11 +35,4 @@ const Faq = ({questions}) => {
     )
 }
 
-
-export const getStaticProps = async () => {
-    return {
-        props: {questions: questionData},
-    };
-};
-
-export default Faq;
+export default Info;
