@@ -38,13 +38,103 @@ $b: 'main-navigation';
     }
   }
 
+  // Mobile toggle
+  &__toggle {
+    display: block;
+    @include respond-to('small') {
+      display: none;
+    }
+
+    &--btn {
+      width: 2rem;
+      height: 2rem;
+      position: relative;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      cursor: pointer;
+
+      span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+        background: $color-brand-base;
+      }
+
+      span:nth-child(1) {
+        top: 0;
+        width: 50%;
+      }
+
+      span:nth-child(2), span:nth-child(3) {
+        top: 10px;
+        width: 75%;
+      }
+
+      span:nth-child(4) {
+        top: 20px;
+        width: 100%;
+      }
+
+      &.is-active {
+        span:nth-child(1) {
+          top: 18px;
+          width: 0;
+          left: 50%;
+        }
+
+        span:nth-child(2) {
+          width: 100%;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+
+        span:nth-child(3) {
+          width: 100%;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+        }
+
+        span:nth-child(4) {
+          top: 18px;
+          width: 0;
+          left: 50%;
+          //width: 100%;
+        }
+      }
+    }
+  }
+
   // Navbar right side: Main navigation
   &__menu {
-    display: block;
+    display: none;
     width: auto;
     background-image: -webkit-linear-gradient(right, #EB3617 5.19%, #189E64 100%);
     background-image: linear-gradient(270deg, #EB3617 5.19%, #189E64 100%);
     padding: 10px;
+
+    @include respond-to('small') {
+      display: block;
+    }
 
     &--list {
       display: -webkit-flex;

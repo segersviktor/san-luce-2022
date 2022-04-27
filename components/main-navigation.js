@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Link from 'next/link';
 import {useRouter} from "next/router";
 
 const MainNavigation = () => {
     const router = useRouter();
+    const [mobileNav, setMobileNav] = useState(false);
+
+    const toggleMobileNav = () => {
+        setMobileNav(!mobileNav);
+    }
 
     return (
         <header className='main-navigation'>
@@ -19,6 +24,14 @@ const MainNavigation = () => {
                             </span>
                         </a>
                     </Link>
+                </div>
+                <div className="main-navigation__toggle">
+                    <div className={ mobileNav ? 'main-navigation__toggle--btn is-active' : 'main-navigation__toggle--btn' } onClick={ toggleMobileNav }>
+                        <span/>
+                        <span/>
+                        <span/>
+                        <span/>
+                    </div>
                 </div>
                 <nav className='main-navigation__menu'>
                     <ul className='main-navigation__menu--list'>

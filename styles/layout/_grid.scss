@@ -21,6 +21,13 @@ $b: 'grid';
     color: #fff;
     margin: 1%;
 
+    &--menu {
+      flex: 1 25%;
+      padding: 30px;
+      min-height: 300px;
+      margin: .5%;
+    }
+
     &--headliner {
       flex: 1 100%;
     }

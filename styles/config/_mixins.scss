@@ -66,3 +66,13 @@
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+
+@mixin respond-to($breakpoint-name) {
+    @if map-has-key($breakpoint, $breakpoint-name) {
+        @media (min-width: map-get($breakpoint, $breakpoint-name)) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+}

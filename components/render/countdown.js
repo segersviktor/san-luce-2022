@@ -53,18 +53,30 @@ const Countdown = () => {
                     </section>
                 ) : (
                     <section className="section-countdown container-xxl">
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - {days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - {days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - {days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - {days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - {days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - {days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
+                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
+                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
+                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
+                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
+                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
+                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
+                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
+                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
+                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
+                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
+                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
+                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
+                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
                     </section>
                 )}
             </div>

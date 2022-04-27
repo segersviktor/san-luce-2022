@@ -2,7 +2,7 @@ import React from 'react';
 
 import MasterLayout from '../components/master-layout';
 import Countdown from "../components/render/countdown";
-import SectionAfterMovie from "../components/render/section-aftermovie";
+import Link from "next/link";
 
 // TODO
 // - Replace all # links with active url
@@ -12,14 +12,33 @@ const Home = () => {
     return (
         <MasterLayout>
             <div className="main-layout__content">
-                <div className="section-hero__wrapper"
-                     style={{backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(images/sanluce-banner.jpeg)'}}>
+                <div className="section-hero__wrapper">
                     <div className="section-hero">
-                        <img src={'/images/sanluce-green.png'} alt='Logo San Luce' className='section-hero__logo'/>
+                        <img src={ '/images/sanluce-green.png' } alt='Logo San Luce' className='section-hero__logo'/>
+                        <video loop autoPlay muted className="section-hero__movie">
+                            <source src={ "/media/aftermovie.mp4" } type="video/mp4"/>
+                        </video>
                     </div>
                 </div>
                 <Countdown/>
-                <SectionAfterMovie/>
+                <section className="grid index-menu">
+                    <Link href="/line-up">
+                        <a className="grid__item grid__item--menu index-menu--item" style={{backgroundImage: 'linear-gradient(to bottom left, rgba(235, 54, 23, 0.5), rgba(24, 158, 100, 0.5)), url(images/san-luce-sfeer1.jpeg)'}}>
+                            Line-Up
+                        </a>
+                    </Link>
+                    <Link href="/line-up">
+                        <a className="grid__item grid__item--menu index-menu--item" style={{backgroundImage: 'linear-gradient(to bottom left, rgba(235, 54, 23, 0.5), rgba(24, 158, 100, 0.5)), url(images/san-luce-sfeer1.jpeg)'}}>
+                            Line-Up
+                        </a>
+                    </Link>
+                    <Link href="/line-up">
+                        <a className="grid__item grid__item--menu index-menu--item" style={{backgroundImage: 'linear-gradient(to bottom left, rgba(235, 54, 23, 0.5), rgba(24, 158, 100, 0.5)), url(images/san-luce-sfeer2.jpeg)'}}>
+                            Line-Up
+                        </a>
+                    </Link>
+                </section>
+                {/*<SectionAfterMovie/>*/}
             </div>
         </MasterLayout>
     );
