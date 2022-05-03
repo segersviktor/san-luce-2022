@@ -16,29 +16,28 @@ const Home = () => {
                     <div className="section-hero">
                         <img src={ '/images/sanluce-green.png' } alt='Logo San Luce' className='section-hero__logo'/>
                         <video loop autoPlay muted className="section-hero__movie">
-                            <source src={ "/media/aftermovie.mp4" } type="video/mp4"/>
+                            <source src={ "/media/aftermovie_header.mp4" } type="video/mp4"/>
                         </video>
                     </div>
                 </div>
                 <Countdown/>
-                <section className="grid index-menu">
+                <section className="grid index-menu container-xl">
                     <Link href="/line-up">
                         <a className="grid__item grid__item--menu index-menu--item" style={{backgroundImage: 'linear-gradient(to bottom left, rgba(235, 54, 23, 0.5), rgba(24, 158, 100, 0.5)), url(images/san-luce-sfeer1.jpeg)'}}>
                             Line-Up
                         </a>
                     </Link>
-                    <Link href="/line-up">
+                    <Link href="/faq">
                         <a className="grid__item grid__item--menu index-menu--item" style={{backgroundImage: 'linear-gradient(to bottom left, rgba(235, 54, 23, 0.5), rgba(24, 158, 100, 0.5)), url(images/san-luce-sfeer1.jpeg)'}}>
-                            Line-Up
+                            FAQ
                         </a>
                     </Link>
-                    <Link href="/line-up">
+                    <Link href="/tickets">
                         <a className="grid__item grid__item--menu index-menu--item" style={{backgroundImage: 'linear-gradient(to bottom left, rgba(235, 54, 23, 0.5), rgba(24, 158, 100, 0.5)), url(images/san-luce-sfeer2.jpeg)'}}>
-                            Line-Up
+                            Tickets
                         </a>
                     </Link>
                 </section>
-                {/*<SectionAfterMovie/>*/}
             </div>
         </MasterLayout>
     );

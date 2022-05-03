@@ -5,7 +5,6 @@ const Countdown = () => {
     const [days, setDays] = useState(0);
     const [hours, setHours] = useState(0);
     const [minutes, setMinutes] = useState(0);
-    const [seconds, setSeconds] = useState(0);
 
     useEffect(() => {
         // TODO Confirm starting hour
@@ -24,10 +23,7 @@ const Countdown = () => {
             const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
             setMinutes(minutes);
 
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-            setSeconds(seconds);
-
-            if (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
+            if (days <= 0 && hours <= 0 && minutes <= 0) {
                 setStarted(true);
             }
         }, 1000);
@@ -40,43 +36,23 @@ const Countdown = () => {
             <div className="section-countdown__inner">
                 { started ? (
                     <section className="section-countdown container-xxl">
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - Tis begonnen!</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - Tis begonnen!</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - Tis begonnen!</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - Tis begonnen!</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Countdown - Tis begonnen!</p>
-                        <p className='section-countdown__text'>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;Location - Rozenlaan 2840 Rumst</p>
+                        {[...Array(10)].map((elementInArray, index) => (
+                                <div className="section-countdown__text" key={ index }>
+                                    <span>Locatie - Rozenlaan 2840 Rumst</span>
+                                    <span>San Luce 2022</span>
+                                </div>
+                            )
+                        )}
                     </section>
                 ) : (
                     <section className="section-countdown container-xxl">
-                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
-                        <p className='section-countdown__text'>{days} dagen {hours} uren {minutes} minuten {seconds} seconden</p>
-                        <p className='section-countdown__text'>Rozenlaan 2840 Rumst</p>
+                        {[...Array(10)].map((elementInArray, index) => (
+                            <div className="section-countdown__text" key={ index }>
+                                <span>Countdown - Nog {days} dagen, {hours} uur en {minutes} minuten.</span>
+                                <span>Locatie - Rozenlaan 2840 Rumst</span>
+                            </div>
+                            )
+                        )}
                     </section>
                 )}
             </div>

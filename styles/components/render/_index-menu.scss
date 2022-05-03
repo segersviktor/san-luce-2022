@@ -2,7 +2,6 @@ $b: 'index-menu';
 
 .#{$b} {
   &--item {
-    background-size: cover;
     color: $white;
     font-weight: 900;
     font-size: 1.5rem;
@@ -13,11 +12,13 @@ $b: 'index-menu';
     align-items: center;
     position: relative;
     transition: all .2s ease-in;
+    background-size: 450px;
 
     &:hover {
       text-decoration: none;
       color: $white;
-      opacity: .9;
+
+      background-size: 500px;
     }
   }
 
