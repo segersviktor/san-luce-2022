@@ -5,11 +5,23 @@ $font-family-base:                  'Roboto', Helvetica Neue, Helvetica, Roboto,
 $font-family-alt:                   'Merriweather', serif;
 
 .title {
-  //font-family: $fo;
 }
 
 .text {
   font-weight: 300;
   font-size: 1rem;
   line-height: 28px;
+}
+
+.border-gradient {
+  background: linear-gradient(270deg, #EB3617 5.19%, #189E64 100%);
+  display: inline-block;
+  padding: 4px;
+
+  .title {
+    background: black;
+    padding: 10px;
+    margin: 0;
+    color: white;
+  }
 }
