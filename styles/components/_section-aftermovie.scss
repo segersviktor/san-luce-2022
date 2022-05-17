@@ -2,24 +2,40 @@ $b: 'section-aftermovie';
 
 .#{$b} {
   display: flex;
-  flex-direction: row;
-  justify-content: right;
+  flex-direction: column;
+
+  @include respond-to('small') {
+    flex-direction: row;
+    justify-content: right;
+  }
 
   &__wrapper {
-    padding: 100px 20px 20px 20px;
+    padding: 0 20px;
+
+    @include respond-to('small') {
+      padding: 100px 20px 20px 20px;
+    }
   }
 
   &__inner {
     color: $white;
-    width: 365px;
-    margin-right: 75px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    @include respond-to('small') {
+      width: 365px;
+      margin-right: 75px;
+    }
   }
 
   &__movie {
-    max-width: 60%;
+    margin-top: 50px;
+
+    @include respond-to('small') {
+      max-width: 60%;
+      margin-top: 0;
+    }
 
     &--player {
       object-fit: cover;

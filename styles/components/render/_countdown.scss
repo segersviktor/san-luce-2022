@@ -6,7 +6,11 @@ $b: 'section-countdown';
   flex-shrink: 0;
   height: 50px;
   align-items: center;
-  animation: slide-left 20s linear infinite;
+  animation: slide-left 10s linear infinite;
+
+  @include respond-to('small') {
+    animation: slide-left 20s linear infinite;
+  }
 
   &__text {
     font-size: 1rem;

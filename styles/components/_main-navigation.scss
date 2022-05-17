@@ -242,6 +242,13 @@ $b: 'main-navigation';
       padding: 1rem 0;
       -webkit-box-shadow: 0 12px 10px 0 rgba(0,0,0,0.4);
       box-shadow: 0 12px 10px 0 rgba(0,0,0,0.4);
+
+      @include respond-to('small') {
+        padding: 0;
+        margin-top: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
     }
 
     .is-active {

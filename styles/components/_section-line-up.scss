@@ -6,11 +6,21 @@ $b: 'section-line-up';
 
   &__menu {
     margin-top: 25px;
+    padding: 0;
+
+    @include respond-to('small') {
+      display: inline-block;
+      padding: inherit;
+    }
 
     li {
-      display: inline-block;
+      display: block;
       list-style: none;
       padding-left: 0;
+
+      @include respond-to('small') {
+        display: inline-block;
+      }
 
       a {
         text-decoration: none;
@@ -33,18 +43,21 @@ $b: 'section-line-up';
         a {
           color: $white;
 
-          &:hover {
-            color: $white;
-          }
-          &:after {
-            content: "";
-            background: $color-brand-thistle;
-            width: calc(100% - 30px);
-            height: 3px;
-            position: absolute;
-            left: 50%;
-            bottom: 5px;
-            transform: translateX(-50%);
+          @include respond-to('small') {
+            &:hover {
+              color: $white;
+            }
+
+            &:after {
+              content: "";
+              background: $color-brand-thistle;
+              width: calc(100% - 30px);
+              height: 3px;
+              position: absolute;
+              left: 50%;
+              bottom: 5px;
+              transform: translateX(-50%);
+            }
           }
         }
       }

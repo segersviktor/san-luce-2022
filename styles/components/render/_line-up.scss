@@ -12,19 +12,34 @@ $b: 'line-up';
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    flex: 1 100%;
+    min-height: 350px;
+
+    @include respond-to('small') {
+      flex: 1 48%;
+      padding: 30px 50px 60px;
+      min-height: 500px;
+    }
 
     &--name {
       font-weight: 900;
-      font-size: 1.5rem;
+      font-size: 1rem;
       line-height: 25px;
       text-transform: uppercase;
-      padding: 15px 20px;
+      padding: 5px 10px;
       display: inline-block;
       position: absolute;
       color: $black;
       background: $white;
       top: 25px;
       left: 25px;
+      text-align: left;
+
+      @include respond-to('small') {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 15px 20px;
+      }
     }
 
     &--date {
@@ -34,11 +49,17 @@ $b: 'line-up';
 
       span {
         transition: all .2s ease-in;
-        font-weight: 900;
-        font-size: 1rem;
+        font-weight: 500;
+        font-size: .9rem;
         line-height: 25px;
         text-transform: uppercase;
         padding: 10px;
+
+        @include respond-to('small') {
+          font-size: 1rem;
+          text-align: center;
+          font-weight: 900;
+        }
       }
 
       span:first-child {
