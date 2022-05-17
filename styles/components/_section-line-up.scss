@@ -1,8 +1,7 @@
 $b: 'section-line-up';
 
 .#{$b} {
-  background-color: $black;
-  color: $white;
+  color: $color-font;
   padding-top: 15px;
 
   &__menu {
@@ -39,8 +38,7 @@ $b: 'section-line-up';
           }
           &:after {
             content: "";
-            background-image: $gradient-brand;
-            background-image: $gradient-brand-webkit;
+            background: $color-brand-thistle;
             width: calc(100% - 30px);
             height: 3px;
             position: absolute;

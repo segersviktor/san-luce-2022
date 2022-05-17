@@ -42,8 +42,7 @@ $b: 'line-up';
       }
 
       span:first-child {
-        background-image: -webkit-linear-gradient(right, #189E64 5.19%, #EB3617 100%);
-        background-image: linear-gradient(270deg, #189E64 5.19%, #EB3617 100%);
+        background: $color-brand-dark-blue;
       }
       span:last-child {
         background-color: $white;

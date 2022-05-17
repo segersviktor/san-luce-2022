@@ -34,7 +34,11 @@ $color-brand-dark-violet: #3d2665 !default;
 
 $gradient-brand-webkit:   -webkit-linear-gradient(right, $color-brand-dark-violet 5.19%, $color-brand-red 100%);
 $gradient-brand:          linear-gradient(270deg, $color-brand-dark-violet 5.19%, $color-brand-red 100%);
-
+$gradient-brand-reverse:          linear-gradient(270deg, $color-brand-red 5.19%, $color-brand-dark-violet 100%);
+$gradient-brand-reverse-webkit:          linear-gradient(270deg, $color-brand-red 5.19%, $color-brand-dark-violet 100%);
 
 $color-background-dark:   $color-brand-base !default;
 $color-icon:              $color-brand-base !default;
+
+$color-background: #000;
+$color-font: #fff;
