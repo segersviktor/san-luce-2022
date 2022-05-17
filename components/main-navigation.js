@@ -4,10 +4,11 @@ import {useRouter} from "next/router";
 
 const MainNavigation = () => {
     const router = useRouter();
-    const [mobileNav, setMobileNav] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMobileNav = () => {
-        setMobileNav(!mobileNav);
+    const toggleMobileNav = (ev) => {
+        ev.preventDefault();
+        setIsOpen(!isOpen);
     }
 
     return (
@@ -24,16 +25,16 @@ const MainNavigation = () => {
                             </span>
                         </a>
                     </Link>
-                </div>
-                <div className="main-navigation__toggle">
-                    <div className={ mobileNav ? 'main-navigation__toggle--btn is-active' : 'main-navigation__toggle--btn' } onClick={ toggleMobileNav }>
-                        <span/>
-                        <span/>
-                        <span/>
-                        <span/>
+                    <div className="main-navigation__toggle">
+                        <div className={ isOpen ? 'main-navigation__toggle--btn is-active' : 'main-navigation__toggle--btn' } onClick={ toggleMobileNav }>
+                            <span/>
+                            <span/>
+                            <span/>
+                            <span/>
+                        </div>
                     </div>
                 </div>
-                <nav className='main-navigation__menu'>
+                <nav className={ isOpen ? 'main-navigation__menu is-open' : 'main-navigation__menu' }>
                     <ul className='main-navigation__menu--list'>
                         <li className={ (router.pathname === "/" ? 'main-navigation__menu--item is-active' : 'main-navigation__menu--item') }>
                             <Link href='/'>
@@ -74,6 +75,7 @@ const MainNavigation = () => {
                 </nav>
             </div>
         </header>
+
     );
 };
 
