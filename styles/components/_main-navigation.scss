@@ -148,6 +148,14 @@ $b: 'main-navigation';
     transform-origin: 50% 0;
     transition: visibility 0s 0.15s ease-out, opacity 0.15s ease-out, transform 0.15s ease-out;
     pointer-events: none;
+    padding: 1rem 0;
+
+    @include respond-to('small') {
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      transition: none;
+    }
 
     &--list {
       display: block;
@@ -257,7 +265,7 @@ $b: 'main-navigation';
               height: 3px;
               position: absolute;
               left: 50%;
-              bottom: 5px;
+              top: 35px;
               transform: translateX(-50%);
             }
           }
