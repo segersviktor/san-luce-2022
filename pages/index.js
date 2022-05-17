@@ -3,6 +3,7 @@ import React from 'react';
 import MasterLayout from '../components/master-layout';
 import Countdown from "../components/render/countdown";
 import Link from "next/link";
+import SectionAfterMovie from "../components/render/section-aftermovie";
 
 // TODO
 // - Replace all # links with active url
@@ -21,23 +22,7 @@ const Home = () => {
                     </div>
                 </div>
                 <Countdown/>
-                <section className="grid index-menu container-xl">
-                    <Link href="/line-up">
-                        <a className="grid__item grid__item--menu index-menu--item" style={{backgroundImage: 'linear-gradient(to bottom left, rgba(235, 54, 23, 0.5), rgba(24, 158, 100, 0.5)), url(images/san-luce-sfeer1.jpeg)'}}>
-                            Line-Up
-                        </a>
-                    </Link>
-                    <Link href="/faq">
-                        <a className="grid__item grid__item--menu index-menu--item" style={{backgroundImage: 'linear-gradient(to bottom left, rgba(235, 54, 23, 0.5), rgba(24, 158, 100, 0.5)), url(images/san-luce-sfeer1.jpeg)'}}>
-                            FAQ
-                        </a>
-                    </Link>
-                    <Link href="/tickets">
-                        <a className="grid__item grid__item--menu index-menu--item" style={{backgroundImage: 'linear-gradient(to bottom left, rgba(235, 54, 23, 0.5), rgba(24, 158, 100, 0.5)), url(images/san-luce-sfeer2.jpeg)'}}>
-                            Tickets
-                        </a>
-                    </Link>
-                </section>
+                <SectionAfterMovie />
             </div>
         </MasterLayout>
     );

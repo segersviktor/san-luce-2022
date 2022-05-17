@@ -1,12 +1,12 @@
 import React from 'react';
 import MasterLayout from "../../components/master-layout";
 import MainHeader from "../../components/main-header";
-import questionData from "../../data/faq.json";
-import Question from "../../components/render/question";
-import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
+import Question from "../../components/render/question";
+import questionData from "../../data/faq.json";
 
-const Faq = ({ questions, subject }) => {
+const InfoQuery = ({ questions, subject }) => {
     return (
         <MasterLayout>
             <div className="main-layout__content">
@@ -53,11 +53,32 @@ const Faq = ({ questions, subject }) => {
     )
 }
 
+export const getStaticPaths = async () => {
+    const subjects = [
+        'algemeen',
+        'tickest',
+        'locatie'
+    ];
 
-export const getStaticProps = async () => {
+    const paths = subjects.map((subject) => ({
+        params: { query: subject }
+    }));
+
     return {
-        props: {questions: questionData['algemeen']},
-    };
-};
+        paths,
+        fallback: true,
+    }
+}
 
-export default Faq;
+export const getStaticProps = async (context) => {
+    const subject = context.params.query;
+
+    return {
+        props: {
+            subject: subject,
+            questions: questionData[subject]
+        }
+    }
+}
+
+export default InfoQuery;

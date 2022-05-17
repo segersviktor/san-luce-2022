@@ -140,7 +140,7 @@ export const getStaticPaths = async () => {
 
     const paths = data.map((item) => ({
         params: { query: item.date.toString() }
-    }))
+    }));
 
     return {
         paths,

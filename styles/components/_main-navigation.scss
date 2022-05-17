@@ -30,7 +30,7 @@ $b: 'main-navigation';
     }
 
     span:first-child {
-      color: $color-brand-base;
+      color: $color-brand-red;
     }
 
     span:last-child {
@@ -128,8 +128,8 @@ $b: 'main-navigation';
   &__menu {
     display: none;
     width: auto;
-    background-image: -webkit-linear-gradient(right, #EB3617 5.19%, #189E64 100%);
-    background-image: linear-gradient(270deg, #EB3617 5.19%, #189E64 100%);
+    background-image: $gradient-brand;
+    background-image: $gradient-brand-webkit;
     padding: 10px;
 
     @include respond-to('small') {

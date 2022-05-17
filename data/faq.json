@@ -1,5 +1,5 @@
 {
-  "Praktisch": [
+  "algemeen": [
     {
       "question": "Wanneer is San Luce?",
       "answer": [
@@ -31,7 +31,7 @@
       ]
     }
   ],
-  "Tickets": [
+  "tickets": [
     {
       "question": "Terugbetaling",
       "answer": [
@@ -45,7 +45,7 @@
       ]
     }
   ],
-  "Hoe geraak ik op San Luce?": [
+  "locatie": [
     {
       "question": "Met de fiets",
       "answer": [

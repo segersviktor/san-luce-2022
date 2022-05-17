@@ -37,7 +37,7 @@ $b: 'section-countdown';
   &__wrapper {
     margin: 20px;
     padding: 10px;
-    background: linear-gradient(270deg, #EB3617 5.19%, #189E64 100%);
+    background: $color-brand-dark-violet;
   }
 }
 @keyframes slide-left

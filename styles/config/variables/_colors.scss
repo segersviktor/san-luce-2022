@@ -3,7 +3,7 @@
  */
 $color-red: #bb0a30 !default;
 $color-yellow: #fa0 !default;
-$color-green: #090 !default;
+$color-green: #00bf05 !default;
 $color-silver: #b2b2b2 !default;
 $color-warmsilver: #b6b1a9 !default;
 $color-black: #000 !default;
@@ -20,11 +20,21 @@ $color-gray90: #e5e5e5 !default;
 $color-gray95: #f2f2f2 !default;
 $color-white: #fff !default;
 $color-light: $color-gray95 !default;
-$color-dark: $color-gray20 !default;
-$color-body: $color-dark !default;
-$color-placeholder: $color-gray60 !default;
-$color-invalid: $color-red !default;
+$color-dark:              $color-gray20 !default;
+$color-body:              $color-dark !default;
+$color-placeholder:       $color-gray60 !default;
+$color-invalid:           $color-red !default;
 
-$color-brand-base: #00bf05 !default;
-$color-background-dark: $color-brand-base !default;
-$color-icon: #00B0F0 !default;
+$color-brand-base:        #63C2CA !default;
+$color-brand-red:         #EB5A4C !default;
+$color-brand-green:       #63C2CA !default;
+$color-brand-thistle:     #C7B5D9 !default;
+$color-brand-dark-blue:   #544595 !default;
+$color-brand-dark-violet: #3d2665 !default;
+
+$gradient-brand-webkit:   -webkit-linear-gradient(right, $color-brand-dark-violet 5.19%, $color-brand-red 100%);
+$gradient-brand:          linear-gradient(270deg, $color-brand-dark-violet 5.19%, $color-brand-red 100%);
+
+
+$color-background-dark:   $color-brand-base !default;
+$color-icon:              $color-brand-base !default;
