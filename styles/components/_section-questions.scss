@@ -119,6 +119,15 @@ $b: 'questions';
           text-transform:  uppercase;
           background:      #27d589;
         }
+
+        &.is-active {
+          a {
+            color: $color-brand-base;
+            border: 3px solid $color-brand-base;
+            background: none;
+            //border: 1px solid $color-brand-dark-violet;
+          }
+        }
       }
     }
   }
@@ -134,11 +143,11 @@ $b: 'questions';
     position: relative;
     display: inline-block;
     padding: 10px 0;
+    text-transform: capitalize;
 
     &:after {
       content: "";
-      background-image: -webkit-linear-gradient(right, #EB3617 5.19%, #189E64 100%);
-      background-image: linear-gradient(270deg, #EB3617 5.19%, #189E64 100%);
+      background: $color-brand-green;
       width: 100%;
       height: 3px;
       position: absolute;

@@ -5,6 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import Question from "../../components/render/question";
 import questionData from "../../data/faq.json";
+import Link from 'next/link';
 
 const InfoQuery = ({ questions, subject }) => {
     return (
@@ -15,27 +16,36 @@ const InfoQuery = ({ questions, subject }) => {
                     <aside className="section-questions__menu">
                         <ul>
                             <li>
-                                <a href="">
-                                    Algemeen
-                                    <FontAwesomeIcon icon={ faChevronRight }/>
-                                </a>
+                                <Link href="/faq">
+                                    <a>
+                                        Algemeen
+                                        <FontAwesomeIcon icon={ faChevronRight }/>
+                                    </a>
+                                </Link>
                             </li>
-                            <li>
-                                <a href="">
-                                    Tickets
-                                    <FontAwesomeIcon icon={ faChevronRight }/>
-                                </a>
+                            <li className={ subject === 'tickets' ? 'is-active' : '' }>
+                                <Link href="/faq/tickets">
+                                    <a>
+                                        Tickets
+                                        <FontAwesomeIcon icon={ faChevronRight }/>
+                                    </a>
+                                </Link>
                             </li>
-                            <li>
-                                <a href="">
-                                    Locatie
-                                    <FontAwesomeIcon icon={ faChevronRight }/>
-                                </a>
+                            <li className={ subject === 'locatie' ? 'is-active' : '' }>
+                                <Link href="/faq/locatie">
+                                    <a>
+                                        Locatie
+                                        <FontAwesomeIcon icon={ faChevronRight }/>
+                                    </a>
+                                </Link>
                             </li>
                         </ul>
                     </aside>
                     <section className="section-questions__inner container">
                         <div className="questions">
+                            <div className="questions__title">
+                                <h3>{ subject }</h3>
+                            </div>
                             { questions.map((item, key) => {
                                 return (
                                     <Question key={ key } question={ item.question } answer={ item.answer } />
@@ -72,6 +82,8 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const subject = context.params.query;
+
+    console.log(questionData[subject], subject)
 
     return {
         props: {

@@ -5,6 +5,7 @@ import questionData from "../../data/faq.json";
 import Question from "../../components/render/question";
 import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 const Faq = ({ questions, subject }) => {
     return (
@@ -14,28 +15,37 @@ const Faq = ({ questions, subject }) => {
                 <div className="section-questions container">
                     <aside className="section-questions__menu">
                         <ul>
-                            <li>
-                                <a href="">
-                                    Algemeen
-                                    <FontAwesomeIcon icon={ faChevronRight }/>
-                                </a>
+                            <li className="is-active">
+                                <Link href="/faq">
+                                    <a>
+                                        Algemeen
+                                        <FontAwesomeIcon icon={ faChevronRight }/>
+                                    </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="">
-                                    Tickets
-                                    <FontAwesomeIcon icon={ faChevronRight }/>
-                                </a>
+                                <Link href="/faq/tickets">
+                                    <a>
+                                        Tickets
+                                        <FontAwesomeIcon icon={ faChevronRight }/>
+                                    </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="">
-                                    Locatie
-                                    <FontAwesomeIcon icon={ faChevronRight }/>
-                                </a>
+                                <Link href="/faq/locatie">
+                                    <a>
+                                        Locatie
+                                        <FontAwesomeIcon icon={ faChevronRight }/>
+                                    </a>
+                                </Link>
                             </li>
                         </ul>
                     </aside>
                     <section className="section-questions__inner container">
                         <div className="questions">
+                            <div className="questions__title">
+                                <h3>Algemeen</h3>
+                            </div>
                             { questions.map((item, key) => {
                                 return (
                                     <Question key={ key } question={ item.question } answer={ item.answer } />
