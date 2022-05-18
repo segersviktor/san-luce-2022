@@ -24,7 +24,7 @@ const MasterLayout = ({ children, background }) => {
                     <MainContent>
                         { children }
                     </MainContent>
-                    <MainFooter />
+                    {/*<MainFooter />*/}
                 </div>
             </div>
         </>

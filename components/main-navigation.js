@@ -34,7 +34,8 @@ const MainNavigation = () => {
                         </div>
                     </div>
                 </div>
-                <nav className={ isOpen ? 'main-navigation__menu is-open' : 'main-navigation__menu' }>
+                {/*<nav className={ isOpen ? 'main-navigation__menu is-open' : 'main-navigation__menu' }>*/}
+                <nav className='main-navigation__menu'>
                     <ul className='main-navigation__menu--list'>
                         <li className={ (router.pathname === "/" ? 'main-navigation__menu--item is-active' : 'main-navigation__menu--item') }>
                             <Link href='/'>

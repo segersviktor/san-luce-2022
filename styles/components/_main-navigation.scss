@@ -155,6 +155,7 @@ $b: 'main-navigation';
       visibility: visible;
       transform: none;
       transition: none;
+      pointer-events: initial;
     }
 
     &--list {

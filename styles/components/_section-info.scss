@@ -1,18 +1,22 @@
 $b: 'section-info';
 
 .#{$b} {
-  background: $white;
+  background: $black;
   padding-top: 50px;
   color: $white;
 
   &__inner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include respond-to('small') {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__text {
-    width: 45%;
+    @include respond-to('small') {
+      width: 45%;
+    }
   }
 
   h3 {
@@ -23,8 +27,7 @@ $b: 'section-info';
 
     &:after {
       content: "";
-      background-image: -webkit-linear-gradient(right, #EB3617 5.19%, #189E64 100%);
-      background-image: linear-gradient(270deg, #EB3617 5.19%, #189E64 100%);
+      background-color: $color-brand-green;
       width: 100%;
       height: 3px;
       position: absolute;
