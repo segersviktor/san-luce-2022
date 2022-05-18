@@ -120,18 +120,21 @@ const Query = ({lineUpData}) => {
                         </div>
                         <div className="dialog__bottom--socials">
                             {socials.facebook !== '' ? (
-                                <a target="_blank" className="socials--item" href={ socials.facebook } rel="noreferrer"><FontAwesomeIcon icon={ faFacebook }/></a>
+                                <a target="_blank" className="socials--item" href={ socials.facebook } rel="noreferrer">
+                                    <FontAwesomeIcon icon={ faFacebook } className="socials--item--icon" />
+                                </a>
                             ) : ''}
                             {socials.instagram !== '' ? (
-                                <a target="_blank" className="socials--item" href={ socials.instagram } rel="noreferrer"><FontAwesomeIcon icon={ faInstagram }/></a>
+                                <a target="_blank" className="socials--item" href={ socials.instagram } rel="noreferrer">
+                                    <FontAwesomeIcon icon={ faInstagram } className="socials--item--icon" />
+                                </a>
                             ) : ''}
                             {socials.spotify !== '' ? (
-                                <a target="_blank" className="socials--item" href={ socials.spotify } rel="noreferrer"><FontAwesomeIcon icon={ faSpotify }/></a>
+                                <a target="_blank" className="socials--item" href={ socials.spotify } rel="noreferrer">
+                                    <FontAwesomeIcon icon={ faSpotify } className="socials--item--icon" />
+                                </a>
                             ) : ''}
                         </div>
-                    </div>
-                    <div className="dialog__actions">
-                        <button>Close</button>
                     </div>
                 </div>
             </div>
