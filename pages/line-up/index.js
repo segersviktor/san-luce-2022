@@ -7,7 +7,7 @@ import lineUpData from '../../data/line-up.json';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faInstagram, faSpotify} from "@fortawesome/free-brands-svg-icons";
 
-const Query = ({lineUpData}) => {
+const Query = ({ lineUpData }) => {
     const router = useRouter();
     const [expandedDetails, setExpandedDetails] = useState(false);
     const [detailsTitle, setDetailsTitle] = useState('');

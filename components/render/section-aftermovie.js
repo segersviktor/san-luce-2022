@@ -7,7 +7,7 @@ const SectionAfterMovie = () => {
         <section className="section-aftermovie__wrapper">
             <div className="section-aftermovie">
                 <div className="section-aftermovie__inner">
-                    <h1>Lorem ipsum dolor!</h1>
+                    <h2>Lorem ipsum dolor!</h2>
                     <br/>
                     <p className="text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nulla perferendis possimus quas vitae? Dignissimos error nam nemo nulla pariatur, provident repellat sit voluptatem. In.

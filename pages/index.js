@@ -2,8 +2,8 @@ import React from 'react';
 
 import MasterLayout from '../components/master-layout';
 import Countdown from "../components/render/countdown";
-import Link from "next/link";
 import SectionAfterMovie from "../components/render/section-aftermovie";
+import SectionNews from "../components/render/section-news";
 
 // TODO
 // - Replace all # links with active url
@@ -22,6 +22,7 @@ const Home = () => {
                     </div>
                 </div>
                 <Countdown/>
+                <SectionNews />
                 <SectionAfterMovie />
             </div>
         </MasterLayout>
