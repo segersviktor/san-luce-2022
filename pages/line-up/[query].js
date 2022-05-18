@@ -49,6 +49,8 @@ const Query = ({lineUpData}) => {
         });
     };
 
+    const currentDate = new Date();
+
     return (
         <MasterLayout>
             <div className="main-layout__content">
@@ -71,6 +73,9 @@ const Query = ({lineUpData}) => {
                         <section className="section-line-up__inner">
                             <div className="grid line-up">
                                 { lineUpData.map((item, index) => {
+                                    const isReleased = currentDate > new Date(item.release);
+                                    if (!isReleased) return ('');
+
                                     const backgroundImage = `linear-gradient(to bottom left, rgba(235, 54, 23, 0.5), rgba(24, 158, 100, 0.5)), url('../images/lineup/${item.image}')`;
                                     return (
                                         <div

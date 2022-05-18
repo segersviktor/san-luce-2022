@@ -10,6 +10,8 @@ const SectionNews = () => {
         setReleases(data.slice(0, 2));
     }, []);
 
+    const currentDate = new Date();
+
     return (
         <section className="news__wrapper container">
             <div className="news">
@@ -18,6 +20,9 @@ const SectionNews = () => {
                 </div>
                 <div className="news__inner grid">
                     {releases.map((item, index) => {
+                        const isReleased = currentDate > new Date(item.release);
+                        if (!isReleased) return ('');
+
                         const backgroundImage = `linear-gradient(to bottom left, rgba(235, 54, 23, 0.5), rgba(24, 158, 100, 0.5)), url('images/lineup/${item.image}')`;
                         return (
                             <div key={ index } className="grid__item line-up__item grid__item is-stale" style={{backgroundImage: backgroundImage}}>
