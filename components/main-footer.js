@@ -1,16 +1,17 @@
 import React from 'react';
-
 import Link from 'next/link';
 import {faFacebook, faInstagram} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {useRouter} from "next/router";
 
 const MainFooter = () => {
+    const router = useRouter();
 
     return (
         <footer className="main-footer__wrapper">
             <div className="main-footer container">
                 <div className="row">
-                    <div className="col">
+                    <div className="col-sm-12 col-md-4">
                         <p className="main-footer__subtitle title">
                             Volg ons op
                         </p>
@@ -31,49 +32,56 @@ const MainFooter = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="col">
+                    <div className="col-sm-12 col-md-4">
                         <p className="main-footer__subtitle title">
                             Algemeen
                         </p>
                         <ul className="main-footer__menu">
-                            <li>
-                                <Link href='/tickets'>
+                            <li className={ (router.pathname === "/" ? 'is-active' : '') }>
+                                <Link href='/'>
                                     <a>
-                                        Tickets
+                                        Home
                                     </a>
                                 </Link>
                             </li>
-                            <li>
-                                <Link href='#'>
+                            <li className={ ((router.pathname === "/line-up" || router.pathname === '/line-up/[query]') ? 'is-active' : '') }>
+                                <Link href="/line-up">
                                     <a>
-                                        Contact
+                                        Line-Up
                                     </a>
                                 </Link>
                             </li>
-                            <li>
+                            <li className={ (router.pathname === "/info" ? 'is-active' : '') }>
                                 <Link href='/info'>
                                     <a>
                                         Info
                                     </a>
                                 </Link>
                             </li>
-                            <li>
+                            <li className={ (router.pathname === "/faq" ? 'is-active' : '') }>
                                 <Link href='/faq'>
                                     <a>
                                         FAQ
                                     </a>
                                 </Link>
                             </li>
+                            <li className={ (router.pathname === "/tickets" ? 'is-active' : '') }>
+                                <Link href='/tickets'>
+                                    <a className={ (router.pathname === "/tickets" ?? 'is-active') }>
+                                        Tickets
+                                    </a>
+                                </Link>
+                            </li>
                         </ul>
                     </div>
-                    <div className="col">
+                    <div className="col-sm-12 col-md-4">
                         <p className="main-footer__subtitle title">
                             Locatie
                         </p>
                         <ul className="main-footer__menu">
                             <li>
-                                <Link href='#'>
-                                    <a>
+                                <Link href='https://goo.gl/maps/7YRDvTidJDRozx7U7'>
+                                    <a rel="nofollow" target="_blank">
                                         Rozenlaan
                                         2840 Rumst,
                                         Belgium
