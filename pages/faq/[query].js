@@ -46,11 +46,11 @@ const InfoQuery = ({ questions, subject }) => {
                             <div className="questions__title">
                                 <h3>{ subject }</h3>
                             </div>
-                            { questions.map((item, key) => {
+                            { questions ? questions.map((item, key) => {
                                 return (
                                     <Question key={ key } question={ item.question } answer={ item.answer } />
                                 )
-                            }) }
+                            }) : '' }
                         </div>
                         <div className="questions questions--other">
                             {/*TODO MAIL ADRES*/}
@@ -64,18 +64,11 @@ const InfoQuery = ({ questions, subject }) => {
 }
 
 export const getStaticPaths = async () => {
-    const subjects = [
-        'algemeen',
-        'tickest',
-        'locatie'
-    ];
-
-    const paths = subjects.map((subject) => ({
-        params: { query: subject }
-    }));
-
     return {
-        paths,
+        paths: [
+            { params: { query: "tickets" } },
+            { params: { query: "locatie" } },
+        ],
         fallback: true,
     }
 }
