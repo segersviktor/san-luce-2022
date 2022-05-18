@@ -1,9 +1,6 @@
 $b: 'questions';
 
 .#{$b} {
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid #666666;
   margin-bottom: rem(50);
 
   &__item {
@@ -18,11 +15,16 @@ $b: 'questions';
     }
 
     &--question {
-      padding: rem(15) 0;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 500;
       display: flex;
       justify-content: space-between;
+      padding: rem(15) 0;
+
+      @include respond-to('small') {
+        padding: rem(15) 0;
+        font-size: 1.2rem;
+      }
 
       &.is-active {
         border-bottom: 2px solid #666666;
@@ -56,16 +58,21 @@ $b: 'questions';
           margin: 0;
           position: relative;
           padding-left: 1.5em;
+          font-size: .9rem;
+
+          @include respond-to('small') {
+            font-size: 1rem;
+          }
 
           &:before {
-            background-color: #8d8585;
+            background-color: $white;
             border-radius: 50%;
             content: "";
             display: block;
             height: 0.6rem;
             left: .25em;
             position: absolute;
-            bottom: 0.6em;
+            top: 0.6em;
             width: 0.6rem;
           }
         }
@@ -90,17 +97,24 @@ $b: 'questions';
 .section-questions {
   background-color: $black;
   color: $white;
-  padding-top: 50px;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
+  padding-top: 25px;
+
+  @include respond-to('small') {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-top: 50px;
+  }
 
   &__menu {
     ul {
-      margin-right: calc(0.2rem + 5.625vw);
-      width: 20rem;
       list-style: none;
       padding: 0;
+
+      @include respond-to('small') {
+        width: 20rem;
+        margin-right: calc(0.2rem + 5.625vw);
+      }
 
       li {
         margin-bottom: 1.2rem;
@@ -110,7 +124,7 @@ $b: 'questions';
           display:         flex;
           justify-content: space-between;
           color:           $black;
-          font-size:       1rem;
+          font-size:       .9rem;
           text-decoration: none;
           font-weight:     $font-weight-bold;
           line-height:     1;
@@ -118,6 +132,10 @@ $b: 'questions';
           position:        relative;
           text-transform:  uppercase;
           background:      #27d589;
+
+          @include respond-to('small') {
+            font-size: 1rem;
+          }
         }
 
         &.is-active {
@@ -125,7 +143,6 @@ $b: 'questions';
             color: $color-brand-base;
             border: 3px solid $color-brand-base;
             background: none;
-            //border: 1px solid $color-brand-dark-violet;
           }
         }
       }
@@ -133,9 +150,11 @@ $b: 'questions';
   }
 
   &__inner {
-    min-width: 60rem;
     width: 100%;
 
+    @include respond-to('small') {
+      min-width: 60rem;
+    }
   }
 
   h3 {

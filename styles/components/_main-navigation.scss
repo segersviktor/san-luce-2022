@@ -11,7 +11,6 @@ $b: 'main-navigation';
     align-items: center;
     padding-top: rem(30);
 
-
     a:hover {
       text-decoration: none;
     }
@@ -149,6 +148,7 @@ $b: 'main-navigation';
     transition: visibility 0s 0.15s ease-out, opacity 0.15s ease-out, transform 0.15s ease-out;
     pointer-events: none;
     padding: 1rem 0;
+    display: none;
 
     @include respond-to('small') {
       opacity: 1;
@@ -156,6 +156,7 @@ $b: 'main-navigation';
       transform: none;
       transition: none;
       pointer-events: initial;
+      display: block;
     }
 
     &--list {
@@ -233,6 +234,7 @@ $b: 'main-navigation';
     }
 
     &.is-open {
+      display: block;
       visibility: visible;
       opacity: 1;
       transform: none;
