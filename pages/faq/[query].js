@@ -19,7 +19,7 @@ const InfoQuery = ({ questions, subject }) => {
                                 <Link href="/faq">
                                     <a>
                                         Algemeen
-                                        <FontAwesomeIcon icon={ faChevronRight }/>
+                                        <FontAwesomeIcon icon={ faChevronRight } className='section-questions__menu--icon' />
                                     </a>
                                 </Link>
                             </li>
@@ -27,7 +27,7 @@ const InfoQuery = ({ questions, subject }) => {
                                 <Link href="/faq/tickets">
                                     <a>
                                         Tickets
-                                        <FontAwesomeIcon icon={ faChevronRight }/>
+                                        <FontAwesomeIcon icon={ faChevronRight } className='section-questions__menu--icon' />
                                     </a>
                                 </Link>
                             </li>
@@ -35,7 +35,7 @@ const InfoQuery = ({ questions, subject }) => {
                                 <Link href="/faq/locatie">
                                     <a>
                                         Locatie
-                                        <FontAwesomeIcon icon={ faChevronRight }/>
+                                        <FontAwesomeIcon icon={ faChevronRight } className='section-questions__menu--icon' />
                                     </a>
                                 </Link>
                             </li>
@@ -82,8 +82,6 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const subject = context.params.query;
-
-    console.log(questionData[subject], subject)
 
     return {
         props: {

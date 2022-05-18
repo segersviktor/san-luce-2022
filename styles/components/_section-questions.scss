@@ -12,6 +12,7 @@ $b: 'questions';
 
     &--icon {
       transition: all 0.3s ease;
+      width: 1rem;
     }
 
     &--question {
@@ -124,7 +125,7 @@ $b: 'questions';
           display:         flex;
           justify-content: space-between;
           color:           $black;
-          font-size:       .9rem;
+          font-size:       1rem;
           text-decoration: none;
           font-weight:     $font-weight-bold;
           line-height:     1;
@@ -146,6 +147,10 @@ $b: 'questions';
           }
         }
       }
+    }
+
+    &--icon {
+      width: 10px;
     }
   }
 

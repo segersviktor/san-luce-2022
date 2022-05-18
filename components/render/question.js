@@ -1,6 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faFacebook} from "@fortawesome/free-brands-svg-icons";
 import {faPlus} from "@fortawesome/free-solid-svg-icons";
 
 const Question = (props) => {
@@ -20,7 +19,9 @@ const Question = (props) => {
         <div className="questions__item" onClick={ toggleAccordion }>
             <div className={ active ? 'questions__item--question is-active' : 'questions__item--question' } ref={ contentRef }>
                 <span>{ props.question }</span>
-                <span className="questions__item--icon"><FontAwesomeIcon icon={ faPlus }/></span>
+                <span className="questions__item--icon">
+                    <FontAwesomeIcon icon={ faPlus }/>
+                </span>
             </div>
             <div className={ active ? 'questions__item--answer is-active' : 'questions__item--answer' } ref={ contentRef }>
                 <ul>

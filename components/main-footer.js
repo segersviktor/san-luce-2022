@@ -17,14 +17,14 @@ const MainFooter = () => {
                         </p>
                         <ul className="main-footer__menu main-footer__menu--socials">
                             <li>
-                                <Link href="#" passHref={ true }>
+                                <Link href="#">
                                     <a target="_blank">
                                         <FontAwesomeIcon icon={ faFacebook }/>
                                     </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" passHref={ true }>
+                                <Link href="#">
                                     <a target="_blank">
                                         <FontAwesomeIcon icon={ faInstagram }/>
                                     </a>
@@ -37,37 +37,37 @@ const MainFooter = () => {
                             Algemeen
                         </p>
                         <ul className="main-footer__menu">
-                            <li className={ (router.pathname === "/" ? 'is-active' : '') }>
+                            <li className={ router.pathname === "/" ? 'is-active' : '' }>
                                 <Link href='/'>
                                     <a>
                                         Home
                                     </a>
                                 </Link>
                             </li>
-                            <li className={ ((router.pathname === "/line-up" || router.pathname === '/line-up/[query]') ? 'is-active' : '') }>
+                            <li className={ (router.pathname === "/line-up" || router.pathname === '/line-up/[query]') ? 'is-active' : '' }>
                                 <Link href="/line-up">
                                     <a>
                                         Line-Up
                                     </a>
                                 </Link>
                             </li>
-                            <li className={ (router.pathname === "/info" ? 'is-active' : '') }>
+                            <li className={ router.pathname === "/info" ? 'is-active' : '' }>
                                 <Link href='/info'>
                                     <a>
                                         Info
                                     </a>
                                 </Link>
                             </li>
-                            <li className={ (router.pathname === "/faq" ? 'is-active' : '') }>
+                            <li className={ router.pathname === "/faq" ? 'is-active' : '' }>
                                 <Link href='/faq'>
                                     <a>
                                         FAQ
                                     </a>
                                 </Link>
                             </li>
-                            <li className={ (router.pathname === "/tickets" ? 'is-active' : '') }>
+                            <li className={ router.pathname === "/tickets" ? 'is-active' : '' }>
                                 <Link href='/tickets'>
-                                    <a className={ (router.pathname === "/tickets" ?? 'is-active') }>
+                                    <a className={ router.pathname === "/tickets" ? 'is-active' : '' }>
                                         Tickets
                                     </a>
                                 </Link>

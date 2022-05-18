@@ -18,7 +18,7 @@ const Info = () => {
                                     Het idee van San Luce ontstond in het jaar 2007 uit een initiatief van enkele jongeren uit de kleinlandeigendom. Deze jonge heren wouden met dit evenement een nieuw facet geven aan de Lichtfeesten . Tijdens deze Lichtfeesten versieren alle inwoners van de kleinlandeigendom te Reet hun huizen en voortuinen met lichtjes en maken er op deze manier een feeëriek spektakel van waar vanalles te beleven is.
                                 </p>
                                 <p className="text">
-                                    Dit nieuwe San Luce organiseerde ze door, op een geweldig ingekleede locatie, geweldige live artiesten en DJ's te laten komen. In 2014 nam een nieuwe garde van organisators de touwen in hand en gaf het festival een groeispurt van 500 man naar een kleine 2500 feestvierdes per avond.
+                                    Dit nieuwe San Luce organiseerde ze door, op een geweldig ingekleede locatie, geweldige live artiesten en DJ&apos;s te laten komen. In 2014 nam een nieuwe garde van organisators de touwen in hand en gaf het festival een groeispurt van 500 man naar een kleine 2500 feestvierdes per avond.
                                 </p>
                             </div>
                             <div className="section-info__text">
