@@ -4,6 +4,7 @@ import NextHead from 'next/head';
 import MainNavigation from "./main-navigation";
 import MainContent from './main-content';
 import MainFooter from "./main-footer";
+import Script from 'next/script'
 
 const MasterLayout = ({children, background}) => {
 

@@ -7,7 +7,6 @@ import SectionNews from "../components/render/section-news";
 
 // TODO
 // - Replace all # links with active url
-// - SEO
 
 const Home = () => {
     return (

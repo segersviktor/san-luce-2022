@@ -8,7 +8,6 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faInstagram, faSpotify} from "@fortawesome/free-brands-svg-icons";
 
 const Query = ({lineUpData}) => {
-    const router = useRouter();
     const { query } = useRouter();
     const [expandedDetails, setExpandedDetails] = useState(false);
     const [detailsTitle, setDetailsTitle] = useState('');
