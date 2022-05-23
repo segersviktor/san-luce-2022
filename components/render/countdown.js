@@ -7,8 +7,7 @@ const Countdown = () => {
     const [minutes, setMinutes] = useState(0);
 
     useEffect(() => {
-        // TODO Confirm starting hour
-        const target = new Date('08/12/2022 19:00:00');
+        const target = new Date('08/12/2022 21:00:00');
 
         const interval = setInterval(() => {
             const now = new Date();

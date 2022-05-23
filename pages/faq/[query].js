@@ -53,8 +53,7 @@ const InfoQuery = ({ questions, subject }) => {
                             }) : '' }
                         </div>
                         <div className="questions questions--other">
-                            {/*TODO MAIL ADRES*/}
-                            <p className="text">Voor meer info kan je ons altijd bereiken op <a href="mailto:lennert.slabbinck@hotmail.be">info@sanluce.be</a></p>
+                            <p className="text">Voor meer info kan je ons altijd bereiken op <a href="mailto:info@sanlucefestival.be">info@sanlucefestival.be</a></p>
                         </div>
                     </section>
                 </div>

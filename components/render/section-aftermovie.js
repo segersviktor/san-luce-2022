@@ -13,7 +13,7 @@ const SectionAfterMovie = () => {
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nulla perferendis possimus quas vitae? Dignissimos error nam nemo nulla pariatur, provident repellat sit voluptatem. In.
                     </p>
                     <br/>
-                    <Link href='#'>
+                    <Link href='/line-up'>
                         <a className='btn btn-outline-light'>
                             Line up
                         </a>

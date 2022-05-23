@@ -17,14 +17,14 @@ const MainFooter = () => {
                         </p>
                         <ul className="main-footer__menu main-footer__menu--socials">
                             <li>
-                                <Link href="#">
+                                <Link href="https://fb.me/e/1jzfHydKc">
                                     <a target="_blank">
                                         <FontAwesomeIcon icon={ faFacebook }/>
                                     </a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#">
+                                <Link href="https://www.instagram.com/san.luce/">
                                     <a target="_blank">
                                         <FontAwesomeIcon icon={ faInstagram }/>
                                     </a>

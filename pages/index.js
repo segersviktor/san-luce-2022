@@ -4,9 +4,7 @@ import MasterLayout from '../components/master-layout';
 import Countdown from "../components/render/countdown";
 import SectionAfterMovie from "../components/render/section-aftermovie";
 import SectionNews from "../components/render/section-news";
-
-// TODO
-// - Replace all # links with active url
+import MainHeader from "../components/main-header";
 
 const Home = () => {
     return (
