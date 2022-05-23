@@ -1,0 +1,33 @@
+$b: 'section-error';
+
+.#{$b} {
+  &__wrapper {
+    margin-top: rem(50);
+  }
+
+  margin: auto;
+
+  h1, a {
+    margin: auto;
+    text-align: center;
+    color: $white;
+  }
+
+  h1 {
+    background: $color-brand-dark-blue;
+    padding: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  a {
+    margin-top: rem(50);
+    display: block;
+    font-size: 1.25rem;
+  }
+
+
+  @include respond-to('small') {
+    max-width: 75%;
+  }
+}
