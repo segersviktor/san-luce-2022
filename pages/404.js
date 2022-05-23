@@ -1,9 +1,6 @@
 import React from 'react';
 
 import MasterLayout from '../components/master-layout';
-import Countdown from "../components/render/countdown";
-import SectionAfterMovie from "../components/render/section-aftermovie";
-import SectionNews from "../components/render/section-news";
 import MainHeader from "../components/main-header";
 import Link from 'next/link'
 
