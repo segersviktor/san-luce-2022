@@ -15,7 +15,8 @@ $b: 'section-info';
 
   &__text {
     @include respond-to('small') {
-      width: 45%;
+      column-count: 2;
+      column-gap: rem(50);
     }
   }
 

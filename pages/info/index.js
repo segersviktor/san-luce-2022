@@ -3,8 +3,6 @@ import MasterLayout from "../../components/master-layout";
 import MainHeader from "../../components/main-header";
 
 const Info = () => {
-    const backgroundImage = `linear-gradient(to bottom left, rgba(235, 54, 23, 0.5), rgba(24, 158, 100, 0.5)), url('../images/crew.png')`;
-
     return (
         <MasterLayout>
             <div className="main-layout__content">
@@ -15,18 +13,13 @@ const Info = () => {
                         <div className="section-info__inner">
                             <div className="section-info__text">
                                 <p className="text">
-                                    Het idee van San Luce ontstond in het jaar 2007 uit een initiatief van enkele jongeren uit de kleinlandeigendom. Deze jonge heren wouden met dit evenement een nieuw facet geven aan de Lichtfeesten . Tijdens deze Lichtfeesten versieren alle inwoners van de kleinlandeigendom te Reet hun huizen en voortuinen met lichtjes en maken er op deze manier een feeëriek spektakel van waar vanalles te beleven is.
-                                </p>
-                                <p className="text">
-                                    Dit nieuwe San Luce organiseerde ze door, op een geweldig ingekleede locatie, geweldige live artiesten en DJ&apos;s te laten komen. In 2014 nam een nieuwe garde van organisators de touwen in hand en gaf het festival een groeispurt van 500 man naar een kleine 2500 feestvierdes per avond.
-                                </p>
-                            </div>
-                            <div className="section-info__text">
-                                <p className="text">
-                                    Deze garde organiseert vrijdag en zatedag tijdens de lichtfeesten een groots muzikaal en lichtspectakel. Zo hebben we afgelopen nationale artiesten als Tourist LeMC, Soul Shakers, Daisy, Average Rob, Alpharock, Stijn van De Voorde,... op ons podium hebben zien optreden.
-                                </p>
-                                <p className="text">
-                                    Hiernaast wordt er ook plaats gehouden voor het lokale talent. Track-Thor is de afgelopen 5 jaar al een vaste afsluiter voor San Luce. Daarnaast komen ook DJ DIVS en RBE op ons podium optreden, die eveneens trotste wijkbewoners zijn.
+                                    San Luce biedt al zestien jaar een uitlaatklep aan jongeren tijdens de Lichtfeesten. Enkele jongeren uit het Kleine Landeigendom in Reet vonden dat er tijdens de lichtfeesten te weinig georganiseerd werd voor de jeugd en namen dan maar zelf het heft in handen. Wat begon als een klein gesjord podium onder de boom van Groeninge, groeide al snel uit tot een heus festival met een spectaculaire lichtshow en grote artiesten. Al is de essentie steeds dezelfde gebleven: een sympathiek zomers feestje bouwen voor de lokale jeugd, met aandacht voor licht, het blijven tenslotte de Lichtfeesten.
+                                    <br/><br/>
+                                    In die zestien jaar werd het festival ook steeds door lokale jongeren op poten gezet. Het ontwerpen van het podium, de opbouw, de afbraak, de lichtshow, de dj’s, de shiften, de foto’s, de aftermovies,... alles werd en wordt nog steeds voor 100% door jeugd georganiseerd. De organisatie is dan ook ongelooflijk trots op hoe het festival de laatste jaren gegroeid is en elk jaar een tikje professioneler wordt. Het jeugdige ‘diy-aspect’ van San Luce, maakt het dan ook tot een van de sympathiekste evenementen uit de streek.
+                                    <br/><br/>
+                                    Doorheen de jaren zijn er al heel wat grote namen de revue gepasseerd; Tourist Lemc, Wahwahsda, Gunther D, Soul Shakers, Average Rob & Omdat het kan Soundsystem om er zo een paar op te noemen. Maar San Luce draait niet enkel om gevestigde waarden, er is veel aandacht voor lokaal talent en toffe acts, de belevenis primeert!
+                                    <br/><br/>
+                                    Na zestien jaar eindigt het verhaal op Groeninge. Het huidige San Luce concept loopt ten einde, maar niet zonder een laatste editie in 2022. Wat de toekomst brengt, is voor later…
                                 </p>
                             </div>
                         </div>
