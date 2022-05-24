@@ -1,47 +1,51 @@
 {
   "algemeen": [
     {
-      "question": "Wanneer is San Luce?",
+      "question": "Wanneer vindt San Luce plaats?",
       "answer": [
-        "Het festival gaat door van vrijdagavond 12 augustus 2022 tot en met zaterdag 13 augustus 2022."
+        "Het festival gaat op vrijdag 12 en zaterdag 13 augustus 2022 door!"
+      ]
+    },
+    {
+      "question": "Hoe laat vindt San Luce plaats?",
+      "answer": [
+        "San Luce start op vrijdag om 21:00u en eindigt om 02:00u. Zaterdag beginnen we er iets vroeger aan en wordt er om 16:00u reeds muziek gespeeld. Het festival eindigt zaterdag om 02:00u.",
+        "De togen sluiten om 01:45u en na 01:30u zijn er geen drankbonnen meer te koop."
       ]
     },
     {
       "question": "Hoe oud moet ik zijn?",
-      "answer": ["San Luce heeft een minimum leeftijd van 16+."]
+      "answer": ["San Luce hanteert een minimumleeftijd van zestien jaar."]
     },
     {
-      "question": "Wisselbekers",
+      "question": "Werkt San Luce met wisselbekers?",
       "answer": [
-        "Aangezien wij een duurzaam festival zijn geloven wij niet in wegwerpbekers. Er zijn daarom herbruikbare bekers.",
-        "Je betaalt voor je beker één jeton. Als je de beker terug inruilt, krijg je de opvoorhand betaalde kost terug."
+        "Ja, als duurzaam festival gebruiken wij geen wegwerpbekers.",
+        "Je betaalt bij je eerste consumptie één jeton extra voor een beker, aan het einde van het festival kan je die beker weer inruilen voor het betaalde bedrag."
       ]
     },
     {
-      "question": "Is er een vestiare",
-      "answer": ["Ons evenement is volledig openlucht. Daardoor is er geen vestiare."]
-    },
-    {
-      "question": "Sluitingstijd",
-      "answer": [
-        "De muziek start om 21:00 en stopt om 03:00.",
-        "Onze toog is open tot 02:45.",
-        "De verkoop van drankbonnen stopt om 02:30.",
-        "Bonnen zijn geldig tijdens de volledige lichtfeesten over het volledige domein. Dit wil zeggen dat je met je bonnen zowel op de San Luce weide als in de wijk kan betalen."
-      ]
+      "question": "Is er een vestiaire aanwezig?",
+      "answer": ["San Luce gaat door in open lucht, er is geen vestiaire."]
     }
   ],
   "tickets": [
     {
-      "question": "Terugbetaling",
+      "question": "Dubbele boeking! Kan ik mijn ticket terugbetaald krijgen?",
       "answer": [
-        "Er worden geen tickets terugbetaald."
+        "Tickets worden niet terugbetaald."
+      ]
+    },
+    {
+      "question": "Moet ik inkom voor de lichtfeesten betalen?",
+      "answer": [
+        "Neen, inkom in de wijk is dit jaar gratis."
       ]
     },
     {
       "question": "Kan ik nog tickets aan de kassa kopen?",
       "answer": [
-        "Er zijn nog steeds tickets te koop aan de kassa. We houden ons wel aan de regel vol is vol. Dit wil zeggen dat als de capaciteit bereikt is, inkom zonder tickets geweigerd wordt."
+        "Tickets zijn uitsluitend online te verkrijgen, niet aan de kassa."
       ]
     }
   ],
@@ -49,23 +53,19 @@
     {
       "question": "Met de fiets",
       "answer": [
-        "Het festivalterrein is het beste bereikbaar met de fiets. Er is een fietsenstalling voorzien waar je je fiets veilig kan achterlaten."
+        "San Luce is het best bereikbaar met de fiets. Er is een fietsenstalling voorzien vlakbij het festival."
       ]
     },
     {
       "question": "Met het openbaar vervoer",
       "answer": [
-        "De lichtfeesten zijn makkelijk te bereiken met het openbaar vervoer. Afstappen doe je best aan de bushalte Rozenlaan. Deze bevindt zich op enkele meters van de hoofdinkom.",
-        "Lijn 181 (Groenplaats – Aartselaar – Rumst) – halte Rozenlaan.",
-        "Lijn 295 (Antwerpen – Niel – Predikherenvelden – Boom ) – halte Rozenlaan."
+        "San Luce is ook goed bereikbaar met het openbaar vervoer, afstappen doe je best aan de bushalte Rozenlaan in Reet."
       ]
     },
     {
       "question": "Met de auto",
       "answer": [
-        "Er zijn 2 betalende parkings voor auto’s in de Predikherenhoevestraat. (€5/voertuig).",
-        "Er zijn parkingplaatsen voor mindervaliden voorzien ter hoogte van de school in de Predikherenhoevestraat.",
-        "Er zijn gratis parkeerplaatsen voor auto’s in de Beukenlaan aan het Gemeentelijk Park van Boom."
+        "Er zijn parkings voor de lichtfeesten voorzien, surf naar https://lichtfeestenreet.be/ voor meer info."
       ]
     }
   ]
