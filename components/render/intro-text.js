@@ -3,7 +3,7 @@ import React from 'react';
 const IntroText = () => {
     return (
         <section className="intro container">
-            <div className="intro__title">
+            <div className="intro__title mt-2">
                 <h2>The last dance</h2>
             </div>
             <div className="intro__inner">
