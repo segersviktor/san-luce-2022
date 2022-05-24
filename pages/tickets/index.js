@@ -25,16 +25,14 @@ const Tickets = () => {
                 <div className="section-tickets">
                     <section className="container">
                         <h3>Tickets</h3>
-                        <ul className='text'>
-                            <li>
-                                Een combi ticket geeft je op zaterdag en zondag toegang tot het festival.
-                            </li>
-                            <li>
-                                Met een dag ticket heb je enkel toegang op de gekozen dag.
-                            </li>
-                            <li>
-                                Er worden geen tickets terugbetaald.
-                            </li>
+                        <ul className="text">
+                            <li>Tickets zijn enkel voor personen die 16 jaar of ouder zijn;</li>
+                            <li>Dagtickets kosten &euro;10,00 en zijn geldig op de gekozen dag;</li>
+                            <li>Combitickets kosten &euro;18,00 en zijn het hele weekend geldig;</li>
+                            <li>Groep combitickets kosten &euro;90,00 en zijn het hele weekend geldig voor 6 personen;</li>
+                            <li>Tickets worden niet terugbetaald;</li>
+                            <li>Tickets kunnen niet worden doorverkocht;</li>
+                            <li>Tickets zijn uitsluitend online te verkrijgen, niet aan de kassa.</li>
                         </ul>
                         <div className="section-tickets__inner">
                             <div className="section-tickets__notification">
