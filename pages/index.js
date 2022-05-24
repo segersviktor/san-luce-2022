@@ -4,6 +4,7 @@ import MasterLayout from '../components/master-layout';
 import Countdown from "../components/render/countdown";
 import SectionAfterMovie from "../components/render/section-aftermovie";
 import SectionNews from "../components/render/section-news";
+import IntroText from "../components/render/intro-text";
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
                     </div>
                 </div>
                 <Countdown/>
+                <IntroText />
                 <SectionNews />
                 <SectionAfterMovie />
             </div>

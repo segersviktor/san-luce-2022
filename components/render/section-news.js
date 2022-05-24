@@ -25,7 +25,7 @@ const SectionNews = () => {
 
                         const backgroundImage = `linear-gradient(to bottom left, rgba(235, 54, 23, 0.5), rgba(24, 158, 100, 0.5)), url('images/lineup/${item.image}')`;
                         return (
-                            <div key={ index } className="grid__item line-up__item grid__item is-stale" style={{backgroundImage: backgroundImage}}>
+                            <div key={ index } className="line-up__item grid__item is-stale" style={{backgroundImage: backgroundImage}}>
                                 <span className="line-up__item--name">
                                     {item.name}
                                 </span>
