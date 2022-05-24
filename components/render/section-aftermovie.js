@@ -7,10 +7,12 @@ const SectionAfterMovie = () => {
         <section className="section-aftermovie__wrapper">
             <div className="section-aftermovie">
                 <div className="section-aftermovie__inner">
-                    <h2>Lorem ipsum dolor!</h2>
+                    <div className="section-aftermovie__title">
+                        <h2>Terug van weggeweest!</h2>
+                    </div>
                     <br/>
                     <p className="text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nulla perferendis possimus quas vitae? Dignissimos error nam nemo nulla pariatur, provident repellat sit voluptatem. In.
+                        Na twee jaar van gedwongen afwezigheid kunnen we weer, met het zalige San-Luce-gevoel van weleer! Hoog tijd om weer eens alles kapot te springen tijdens het leukste weekend van het jaar!
                     </p>
                     <br/>
                     <Link href='/line-up'>
