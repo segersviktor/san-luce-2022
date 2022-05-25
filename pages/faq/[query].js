@@ -44,7 +44,7 @@ const InfoQuery = ({ questions, subject }) => {
                     <section className="section-questions__inner container">
                         <div className="questions">
                             <div className="questions__title">
-                                <h3>{ subject === 'locatie' ? ('Hoe geraak ik best op San Luce?') : subject}</h3>
+                                <h3>{ subject === 'locatie' ? ('Hoe geraak ik het best op San Luce') : subject}</h3>
                             </div>
                             { questions ? questions.map((item, key) => {
                                 return (
