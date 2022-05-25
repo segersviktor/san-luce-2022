@@ -19,14 +19,14 @@ const MainFooter = () => {
                             <li>
                                 <Link href="https://fb.me/e/1jzfHydKc">
                                     <a target="_blank">
-                                        <FontAwesomeIcon icon={ faFacebook }/>
+                                        <FontAwesomeIcon icon={ faFacebook } className='main-footer__menu--icon' />
                                     </a>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="https://www.instagram.com/san.luce/">
                                     <a target="_blank">
-                                        <FontAwesomeIcon icon={ faInstagram }/>
+                                        <FontAwesomeIcon icon={ faInstagram } className='main-footer__menu--icon' />
                                     </a>
                                 </Link>
                             </li>

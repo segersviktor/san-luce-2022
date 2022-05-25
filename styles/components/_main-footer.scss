@@ -67,6 +67,10 @@ $b: 'main-footer';
         }
       }
     }
+
+    &--icon {
+      width: rem(25);
+    }
   }
 
   &__copyright {
