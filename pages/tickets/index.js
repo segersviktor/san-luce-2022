@@ -5,6 +5,7 @@ import Script from "next/script";
 
 const Tickets = () => {
     const [error, setError] = useState('');
+    const [isLoading, setIsLoading] = useState(true);
 
     return (
         <MasterLayout>
@@ -15,6 +16,8 @@ const Tickets = () => {
                         link: "https://san-luce2020.eventsquare.co/nkawi4wmgq5y/2ysnkmg3defe",
                         element: "esq-store",
                     });
+                    console.log('loaded');
+                    setIsLoading(false);
                 } }
                 onError={ () => {
                     setError('Oeps, er ging iets fout. Probeer het later nog eens.');
@@ -41,6 +44,11 @@ const Tickets = () => {
                             { error ? (
                                 <div className="alert alert-danger" role="alert">
                                     { error }
+                                </div>
+                            ) : '' }
+                            { isLoading ? (
+                                <div className="section-tickets__spinner">
+                                    <div className="spinner-border" role="status"/>
                                 </div>
                             ) : '' }
                             <div id="esq-store"/>

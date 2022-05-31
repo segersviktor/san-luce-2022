@@ -17,6 +17,14 @@ $b: 'section-tickets';
     margin-top: rem(50);
   }
 
+  &__spinner {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(50) 0;
+  }
+
   h3 {
     margin-bottom: rem(20);
     position: relative;
