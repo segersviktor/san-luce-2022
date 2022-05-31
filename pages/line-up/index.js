@@ -2,13 +2,11 @@ import React, {useState} from 'react';
 import Link from 'next/link';
 import MasterLayout from '../../components/master-layout';
 import MainHeader from "../../components/main-header";
-import {useRouter} from "next/router";
 import lineUpData from '../../data/line-up.json';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faFacebook, faInstagram, faSpotify} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram, faSpotify, faSoundcloud } from "@fortawesome/free-brands-svg-icons";
 
 const Query = ({ lineUpData }) => {
-    const router = useRouter();
     const [expandedDetails, setExpandedDetails] = useState(false);
     const [detailsTitle, setDetailsTitle] = useState('');
     const [detailsDescription, setDetailsDescription] = useState('');
@@ -131,6 +129,11 @@ const Query = ({ lineUpData }) => {
                             {socials.spotify !== '' ? (
                                 <a target="_blank" className="socials--item" href={ socials.spotify } rel="noreferrer">
                                     <FontAwesomeIcon icon={ faSpotify } className="socials--item--icon" />
+                                </a>
+                            ) : ''}
+                            {socials.soundcloud !== '' ? (
+                                <a target="_blank" className="socials--item" href={ socials.soundcloud } rel="noreferrer">
+                                    <FontAwesomeIcon icon={ faSoundcloud } className="socials--item--icon" />
                                 </a>
                             ) : ''}
                         </div>

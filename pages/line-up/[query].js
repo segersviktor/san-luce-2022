@@ -5,7 +5,7 @@ import MainHeader from "../../components/main-header";
 import {useRouter} from "next/router";
 import lineUpData from '../../data/line-up.json';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faFacebook, faInstagram, faSpotify} from "@fortawesome/free-brands-svg-icons";
+import {faFacebook, faInstagram, faSoundcloud, faSpotify} from "@fortawesome/free-brands-svg-icons";
 
 const Query = ({lineUpData}) => {
     const { query } = useRouter();
@@ -131,6 +131,11 @@ const Query = ({lineUpData}) => {
                             {socials.spotify !== '' ? (
                                 <a target="_blank" className="socials--item" href={ socials.spotify } rel="noreferrer">
                                     <FontAwesomeIcon icon={ faSpotify } className="socials--item--icon" />
+                                </a>
+                            ) : ''}
+                            {socials.soundcloud !== '' ? (
+                                <a target="_blank" className="socials--item" href={ socials.soundcloud } rel="noreferrer">
+                                    <FontAwesomeIcon icon={ faSoundcloud } className="socials--item--icon" />
                                 </a>
                             ) : ''}
                         </div>
