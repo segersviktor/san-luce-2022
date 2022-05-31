@@ -17,7 +17,7 @@ const Tickets = () => {
                     });
                 } }
                 onError={ () => {
-                    setError('Ay caramba, er loopt iets fout. Probeer het later nog eens.');
+                    setError('Oeps, er ging iets fout. Probeer het later nog eens.');
                 } }
             />
             <div className="main-layout__content">

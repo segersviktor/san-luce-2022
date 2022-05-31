@@ -28,6 +28,16 @@ const MasterLayout = ({children, background}) => {
                 <meta name="description" content="San Luce 2022 vindt plaat van 12 tot 13 augustus 2022. San Luce is een zomers festival vanuit de lichtfeesten. Elk jaar opnieuw zorgen wij voor 2 avonden gevuld met de beste artiesten, cocktails, pintjes,..."/>
                 <meta name="keywords" content="San Luce, Festival, Lichtfeesten, Reet, Rumst, Feest"/>
             </NextHead>
+            <Script strategy="lazyOnload" src={ 'https://www.googletagmanager.com/gtag/js?id=G-9JJFKFQ8XJ' } />
+            <Script strategy="lazyOnload">
+                {
+                    `window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-9JJFKFQ8XJ');`
+                }
+            </Script>
             <div className='main-layout-wrapper'>
                 <div className="main-layout">
                     <MainNavigation/>
