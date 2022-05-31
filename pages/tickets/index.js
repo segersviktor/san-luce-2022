@@ -16,7 +16,6 @@ const Tickets = () => {
                         link: "https://san-luce2020.eventsquare.co/nkawi4wmgq5y/2ysnkmg3defe",
                         element: "esq-store",
                     });
-                    console.log('loaded');
                     setIsLoading(false);
                 } }
                 onError={ () => {
